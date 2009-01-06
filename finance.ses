@@ -1,0 +1,88 @@
+   monthly         55      utils         Columbia Gas
+   monthly         45  spiritual       Eureka Society
+   monthly        979    housing      Stratford Chase
+   monthly       2100       loan      Sherley Brannon
+   monthly         50 cell phone        AT&T Wireless
+   monthly         40   internet              Insight
+   monthly        280  spiritual            Mary Ware
+   monthly         40      utils American Electric Po
+last payme          ?      utils         Monitor Data
+last payme          ?      utils             Conserve
+ quarterly          ? car insura   Response Insurance
+   monthly        382 student lo Sallie Mae Consolida
+
+
+(ses-cell A1 "monthly" "monthly" nil nil)
+(ses-cell B1 55 55 nil nil)
+(ses-cell C1 "utils" "utils" nil nil)
+(ses-cell D1 "Columbia Gas" "Columbia Gas" nil nil)
+
+(ses-cell A2 "monthly" "monthly" nil nil)
+(ses-cell B2 45 45 nil nil)
+(ses-cell C2 "spiritual" "spiritual" nil nil)
+(ses-cell D2 "Eureka Society" "Eureka Society" nil nil)
+
+(ses-cell A3 "monthly" "monthly" nil nil)
+(ses-cell B3 979 979 nil nil)
+(ses-cell C3 "housing" "housing" nil nil)
+(ses-cell D3 "Stratford Chase" "Stratford Chase" nil nil)
+
+(ses-cell A4 "monthly" "monthly" nil nil)
+(ses-cell B4 2100 2100 nil nil)
+(ses-cell C4 "loan" "loan" nil nil)
+(ses-cell D4 "Sherley Brannon" "Sherley Brannon" nil nil)
+
+(ses-cell A5 "monthly" "monthly" nil nil)
+(ses-cell B5 50 50 nil nil)
+(ses-cell C5 "cell phone" "cell phone" nil nil)
+(ses-cell D5 "AT&T Wireless" "AT&T Wireless" nil nil)
+
+(ses-cell A6 "monthly" "monthly" nil nil)
+(ses-cell B6 40 40 nil nil)
+(ses-cell C6 "internet" "internet" nil nil)
+(ses-cell D6 "Insight" "Insight" nil nil)
+
+(ses-cell A7 "monthly" "monthly" nil nil)
+(ses-cell B7 280 280 nil nil)
+(ses-cell C7 "spiritual" "spiritual" nil nil)
+(ses-cell D7 "Mary Ware" "Mary Ware" nil nil)
+
+(ses-cell A8 "monthly" "monthly" nil nil)
+(ses-cell B8 40 40 nil nil)
+(ses-cell C8 "utils" "utils" nil nil)
+(ses-cell D8 "American Electric Power" "American Electric Power" nil nil)
+
+(ses-cell A9 "last payment" "last payment" nil nil)
+(ses-cell B9 "?" "?" nil nil)
+(ses-cell C9 "utils" "utils" nil nil)
+(ses-cell D9 "Monitor Data" "Monitor Data" nil nil)
+
+(ses-cell A10 "last payment" "last payment" nil nil)
+(ses-cell B10 "?" "?" nil nil)
+(ses-cell C10 "utils" "utils" nil nil)
+(ses-cell D10 "Conserve" "Conserve" nil nil)
+
+(ses-cell A11 "quarterly" "quarterly" nil nil)
+(ses-cell B11 "?" "?" nil nil)
+(ses-cell C11 "car insurance" "car insurance" nil nil)
+(ses-cell D11 "Response Insurance" "Response Insurance" nil nil)
+
+(ses-cell A12 "monthly" "monthly" nil nil)
+(ses-cell B12 382 382 nil nil)
+(ses-cell C12 "student loan" "student loan" nil nil)
+(ses-cell D12 "Sallie Mae Consolidated Student Loan" "Sallie Mae Consolidated Student Loan" nil nil)
+
+(ses-column-widths [10 10 10 20])
+(ses-column-printers [nil nil nil nil])
+(ses-default-printer "%.7g")
+(ses-header-row 0)
+
+( ;Global parameters (these are read first)
+ 2 ;SES file-format
+ 12 ;numrows
+ 4 ;numcols
+)
+
+;; Local Variables:
+;; mode: ses
+;; End:

@@ -1,0 +1,179 @@
+(setq debug-on-error t)
+(setq initial-scratch-message nil)
+
+;;; desktop
+
+;(setq desktop-save t)
+;(setq desktop-dirname "~/.emacs.d/")
+;(desktop-save-mode 1)
+
+;;; 
+
+(add-to-list 'load-path (expand-file-name "~/emacs"))
+(load "emacs-contrib")
+
+
+
+
+(when window-system
+  (eval-after-load "menu-bar" '(require 'menu-bar+))
+  (load-library "color-theme")
+  (color-theme-initialize)
+  ;(require 'color-theme-random)
+  ;(setq default-cursor-type 'hbar) ; (setq default-cursor-type '(hbar . 2))
+  (tool-bar-mode 0)
+  (scroll-bar-mode -1)
+  (mouse-wheel-mode 1)
+)
+
+(setq visible-bell t)
+
+;;;
+
+(require 'font-lock)
+(global-font-lock-mode 1)
+(setq font-lock-maximum-decoration t)
+
+
+
+
+
+;;; key sets
+
+
+(global-set-key (kbd "C-x C-b") 'ibuffer-other-window)
+
+(global-set-key (kbd "<f12>")   'goto-line)
+(global-set-key (kbd "C-h") 'backward-delete-char)
+(global-set-key (kbd "C-M-h") 'backward-kill-word)
+
+;;; uniquify
+
+(require 'uniquify)
+;(setq uniquify-buffer-name-style 'reverse)
+;(setq uniquify-buffer-name-style 'forward)
+(setq uniquify-buffer-name-style 'post-forward)
+;(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
+;;; shell access
+
+(setq comint-buffer-maximum-size 20000)
+
+;(setq explicit-shell-file-name "bash")
+(require 'shell-current-directory)
+(global-set-key (kbd "M-s") 'shell-current-directory)
+(require 'comint)
+(add-to-list 'comint-output-filter-functions 'comint-truncate-buffer)
+
+;;; cperl-mode is preferred to perl-mode                                        
+
+(require 'cperl-mode)
+(defalias 'perl-mode 'cperl-mode)
+(cperl-set-style 'gnu)
+ (setq cperl-invalid-face nil) 
+(add-hook 'cperl-mode-hook 'imenu-add-menubar-index)
+
+;;; latex
+
+(add-hook 'latex-mode-hook 'turn-on-auto-fill t)
+
+;;; asciidoc
+
+(autoload 'doc-mode "doc-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.adoc$" . doc-mode))
+(add-hook 'doc-mode-hook
+	  '(lambda ()
+	     (turn-on-auto-fill)
+	     (require 'asciidoc)))
+
+;;; dired
+
+     (add-hook 'dired-load-hook
+               (lambda ()
+                 (load "dired-x")
+                 ;; Set dired-x global variables here.  For example:
+                 ;; (setq dired-guess-shell-gnutar "gtar")
+                 ;; (setq dired-x-hands-off-my-keys nil)
+                 ))
+     (add-hook 'dired-mode-hook
+               (lambda ()
+                 ;; Set dired-x buffer-local variables here.  For example:
+                 ;(dired-omit-mode 1)
+                 ))
+
+
+(setq dired-dwim-target t) 
+
+;;; 
+
+(require 'autorevert)
+(global-auto-revert-mode 1)
+
+;;; proxy at work
+
+(setq url-proxy-services
+      '(
+	("http"     . "webproxy.ny.jpmorgan.com:8000")
+	))
+
+
+;;; Python
+
+(add-to-list 'auto-mode-alist '("\\.py$" . python-mode))
+
+;;; Lisp
+
+(show-paren-mode t)
+(setq show-paren-style 'parenthesis) ; 'mixed)
+
+
+;;; lisp
+
+(setq inferior-lisp-program "sbcl")
+
+(defun lisp-send-buffer ()
+  (interactive)
+  (lisp-eval-region (point-min) (point-max)))
+
+(setq debug-on-error t)
+
+(global-set-key (kbd "<f5>")   'lisp-send-buffer)
+
+;;; scheme
+
+;(require 'quack)
+;(setq quack-run-scheme-always-prompts-p nil)
+;(setq quack-default-program "csi")
+
+;;;
+
+;(require 'tabbar) 
+;(tabbar-mode 1) 
+
+
+;;; misc
+
+
+
+
+; http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/b2f12841338f016f#
+(defun commify (n &optional comma-char) 
+
+
+
+
+ (unless comma-char (setq comma-char ",")) 
+
+(require 'vkill)
+
+
+
+ (with-temp-buffer 
+   (insert (format "%s" n)) 
+   (while (> (- (point) 
+                (line-beginning-position)) 
+             (if (>= n 0) 3 4)) 
+     (backward-char 3) 
+     (insert comma-char) 
+     (backward-char 1)) 
+   (buffer-string)))

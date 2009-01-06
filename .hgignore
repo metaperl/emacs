@@ -1,0 +1,14 @@
+syntax: glob
+*~
+*.pyc
+*.pyc.orig
+*semantic.cache
+*emacs.desktop
+*.fasl
+*.fas
+*.lib
+
+
+syntax: regexp
+.*\#.*\#$
+\#
