@@ -3,9 +3,10 @@
 
 ;;; desktop
 
-;(setq desktop-save t)
-;(setq desktop-dirname "~/.emacs.d/")
-;(desktop-save-mode 1)
+(setq desktop-save t)
+(setq desktop-dirname "~/.emacs.d/")
+(desktop-save-mode 1)
+(setq desktop-restore-eager 5)
 
 ;;; 
 
@@ -41,7 +42,7 @@
 ;;; key sets
 
 
-(global-set-key (kbd "C-x C-b") 'ibuffer-other-window)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (global-set-key (kbd "<f12>")   'goto-line)
 (global-set-key (kbd "C-h") 'backward-delete-char)
@@ -153,20 +154,14 @@
 
 ;;; misc
 
-
+;(require 'vkill)
 
 
 ; http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/b2f12841338f016f#
 (defun commify (n &optional comma-char) 
 
 
-
-
  (unless comma-char (setq comma-char ",")) 
-
-(require 'vkill)
-
-
 
  (with-temp-buffer 
    (insert (format "%s" n)) 

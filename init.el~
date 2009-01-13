@@ -3,9 +3,10 @@
 
 ;;; desktop
 
-;(setq desktop-save t)
-;(setq desktop-dirname "~/.emacs.d/")
-;(desktop-save-mode 1)
+(setq desktop-save t)
+(setq desktop-dirname "~/.emacs.d/")
+(desktop-save-mode 1)
+(setq desktop-restore-eager 5)
 
 ;;; 
 
@@ -19,7 +20,7 @@
   (eval-after-load "menu-bar" '(require 'menu-bar+))
   (load-library "color-theme")
   (color-theme-initialize)
-  (require 'color-theme-random)
+  ;(require 'color-theme-random)
   ;(setq default-cursor-type 'hbar) ; (setq default-cursor-type '(hbar . 2))
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
@@ -153,20 +154,14 @@
 
 ;;; misc
 
-
+;(require 'vkill)
 
 
 ; http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/b2f12841338f016f#
 (defun commify (n &optional comma-char) 
 
 
-
-
  (unless comma-char (setq comma-char ",")) 
-
-(require 'vkill)
-
-
 
  (with-temp-buffer 
    (insert (format "%s" n)) 
