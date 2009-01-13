@@ -154,6 +154,11 @@
 
 ;;; misc
 
+(fset 'six-windows
+   "\C-x1\C-x3\C-x3\C-x+\C-x2\C-xo\C-xo\C-x2\C-xo\C-xo\C-x2")
+
+
+
 ;(require 'vkill)
 
 
