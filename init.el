@@ -6,7 +6,7 @@
 (setq desktop-save t)
 (setq desktop-dirname "~/.emacs.d/")
 (desktop-save-mode 1)
-(setq desktop-restore-eager 5)
+(setq desktop-restore-eager 3)
 
 ;;; 
 
