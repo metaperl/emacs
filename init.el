@@ -157,6 +157,15 @@
 (fset 'six-windows
    "\C-x1\C-x3\C-x3\C-x+\C-x2\C-xo\C-xo\C-x2\C-xo\C-xo\C-x2")
 
+;;; TRAMP
+
+(add-to-list 'backup-directory-alist
+	     (cons tramp-file-name-regexp nil))
+
+;(setq tramp-default-method "rsync")
+
+
+
 
 
 ;(require 'vkill)
