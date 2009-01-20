@@ -20,7 +20,7 @@
   (eval-after-load "menu-bar" '(require 'menu-bar+))
   (load-library "color-theme")
   (color-theme-initialize)
-  ;(require 'color-theme-random)
+  (require 'color-theme-random)
   ;(setq default-cursor-type 'hbar) ; (setq default-cursor-type '(hbar . 2))
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
