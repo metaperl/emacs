@@ -21,7 +21,7 @@
   (eval-after-load "menu-bar" '(require 'menu-bar+))
   (load-library "color-theme")
   (color-theme-initialize)
-  ;(require 'color-theme-random)
+  (require 'color-theme-random)
   ;(setq default-cursor-type 'hbar) ; (setq default-cursor-type '(hbar . 2))
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
@@ -159,6 +159,7 @@
 (fset 'six-windows-emacs-22
    "\C-x1\C-x3\C-x3\C-x+\C-x2\C-xo\C-xo\C-x2\C-xo\C-xo\C-x2")
 
+<<<<<<< HEAD:init.el
 (fset 'six-windows
    [?\C-[ ?x ?s ?e ?t ?- ?d ?e ?f tab return ?f ?i ?x ?e ?d return ?\C-x ?1 ?\C-x ?3 ?\C-x ?3 ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-u ?2 ?3 ?\C-x ?} ?\C-x ?o ?\C-x ?o ?\C-u ?2 ?3 ?\C-x ?} ?\C-x ?o ?\C-x ?o ?\C-u ?2 ?4 ?\C-x ?{])
 
@@ -169,6 +170,14 @@
   (set-default-font "fixed")
   (six-windows))
 
+=======
+;;; TRAMP
+
+(add-to-list 'backup-directory-alist
+	     (cons tramp-file-name-regexp nil))
+
+;(setq tramp-default-method "rsync")
+>>>>>>> 1673e9966793d0b31572df0bfbd70496965683b8:init.el
 
 
 
