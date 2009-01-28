@@ -42,12 +42,21 @@
 ;;;
 
   
+(defun tidy-buffer-internal ()
+  (shell-command-on-region (point-min) (point-max) "tidy -i"
+			   (current-buffer)
+			   t
+			   )
+  )
 
-(defun shell-command-on-buffer ()
+(fset 'debody
+   [?\C-[ ?< ?\C-s ?< ?b ?o ?d ?y ?> ?\C-s ?\C-n ?\C-a ?\C-[ ?< ?\C-x ?\C-x ?\C-w ?\C-s ?< ?/ ?b ?o ?d ?y ?\C-p ?\C-e ?\C-[ ?> ?\C-x ?\C-x ?\C-w return ?\C-x ?\C-s])
+
+
+(defun tidy-buffer ()
   (interactive)
-  (mark-whole-buffer)
-  (call-interactively 'shell-command-on-region))
-
+  (tidy-buffer-internal)
+  (execute-kbd-macro 'debody))
 
 ;;; key sets
 
@@ -183,8 +192,7 @@
 
 ;;; TRAMP
 
-(add-to-list 'backup-directory-alist
-	     (cons tramp-file-name-regexp nil))
+;(add-to-list 'backup-directory-alist (cons tramp-file-name-regexp nil))
 
 ;(setq tramp-default-method "rsync")
 
