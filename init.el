@@ -151,15 +151,15 @@
 
 ;;; lisp
 
-(setq inferior-lisp-program "sbcl")
+;(setq inferior-lisp-program "sbcl")
 
-(defun lisp-send-buffer ()
-  (interactive)
-  (lisp-eval-region (point-min) (point-max)))
+;; (defun lisp-send-buffer ()
+;;   (interactive)
+;;   (lisp-eval-region (point-min) (point-max)))
 
-(setq debug-on-error t)
+;; (setq debug-on-error t)
 
-(global-set-key (kbd "<f5>")   'lisp-send-buffer)
+;; (global-set-key (kbd "<f5>")   'lisp-send-buffer)
 
 ;;; scheme
 
