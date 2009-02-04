@@ -13,3 +13,34 @@
 (add-to-list 'load-path "~/emacs-contrib/color-theme-6.6.0")
 
 
+;;; clojure-mode 
+
+(setq clojure-src-root "c:/tmp/c")
+(clojure-slime-config)
+
+(autoload 'clojure-mode "clojure-mode" "A major mode for Clojure" t)
+(add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
+
+
+
+;; ;;; http://github.com/nablaone/slime/tree/master
+;; (add-to-list 'load-path "~/emacs-contrib/slime")          
+
+;; ;;; http://github.com/jochu/swank-clojure/tree/master
+;; (add-to-list 'load-path "~/emacs-contrib/swank-clojure")  
+
+;; ;;; http://github.com/jochu/clojure-mode/tree/master
+;; (add-to-list 'load-path "~/emacs-contrib/clojure-mode")   
+
+;; (require 'slime)
+
+;; (autoload 'slime "slime" "" t)
+;; ;(swank-clojure-config (setq swank-clojure-jar-path "~/src/clojure/clojure.jar"))
+;; (setq swank-clojure-jar-path "~/src/clojure/clojure.jar")
+
+;; ;(setq swank-clojure-extra-classpaths '("~/src/clojure-contrib/clojure-contrib.jar"))
+
+;; ;; (setq swank-clojure-binary "clojure")
+;; ;(require 'clojure-auto)
+;; (require 'swank-clojure-autoload)
+

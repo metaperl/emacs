@@ -14,9 +14,15 @@
 
 
 ;;; clojure-mode 
-;;; http://github.com/jochu/clojure-mode/tree/master
+;;; http://github.com/technomancy/clojure-mode/tree/master
 
-(add-to-list 'load-path "~/emacs-contrib/clojure-mode")
+(add-to-list 'load-path "c:/tmp/c/technomancy-clojure-mode")
+(require 'clojure-mode)
+
+(setq clojure-src-root "c:/tmp/c")
+(clojure-slime-config)
 
 (autoload 'clojure-mode "clojure-mode" "A major mode for Clojure" t)
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
+
+
