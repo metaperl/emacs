@@ -13,3 +13,16 @@
 (add-to-list 'load-path "~/emacs-contrib/color-theme-6.6.0")
 
 
+;;; desktopaid
+
+;(add-to-list 'load-path "~/emacs-contrib/desktopaid-1.0.5")
+;(autoload 'dta-hook-up "desktopaid.elc" "Desktop Aid" t)
+;(dta-hook-up)
+
+
+
+;;; cperl-mode
+
+(add-to-list 'load-path "~/emacs-contrib/cperl-mode")
+
+

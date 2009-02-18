@@ -3,11 +3,15 @@
 
 ;;; desktop
 
-(require 'desktop)
-(setq desktop-save t)
-(setq desktop-dirname "~/.emacs.d/")
+;(require 'desktop)
+;(setq desktop-save t)
+;(setq desktop-dirname "~/.emacs.d/")
 ;(desktop-save-mode 1)
-(setq desktop-restore-eager 3)
+;(setq desktop-restore-eager 3)
+
+;;; desktopaid
+
+
 
 ;;; 
 
@@ -91,9 +95,13 @@
 
 (require 'cperl-mode)
 (defalias 'perl-mode 'cperl-mode)
-(cperl-set-style 'gnu)
- (setq cperl-invalid-face nil) 
-(add-hook 'cperl-mode-hook 'imenu-add-menubar-index)
+(setq cperl-continued-brace-offset -2
+      cperl-continued-statement-offset 2
+      cperl-indent-left-aligned-comments nil
+      cperl-indent-level 4
+      cperl-indentation-style "BSD"
+      cperl-syntaxify-by-font-lock t)
+
 
 ;;; latex
 
