@@ -1,4 +1,4 @@
-<<<<<<< HEAD:emacs-contrib.el
+
 ;;; asciidoc
 
 (add-to-list 'load-path "~/emacs-contrib/asciidoc-el")
@@ -56,4 +56,4 @@
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
 
 
->>>>>>> 34d0e42798e51fe5c948d6b41a46e8392ae940ea:emacs-contrib.el
+
