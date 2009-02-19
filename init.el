@@ -3,10 +3,15 @@
 
 ;;; desktop
 
-(setq desktop-save t)
-(setq desktop-dirname "~/.emacs.d/")
-(desktop-save-mode 1)
-(setq desktop-restore-eager 3)
+;(require 'desktop)
+;(setq desktop-save t)
+;(setq desktop-dirname "~/.emacs.d/")
+;(desktop-save-mode 1)
+;(setq desktop-restore-eager 3)
+
+;;; desktopaid
+
+
 
 ;;; 
 
@@ -20,7 +25,7 @@
   (eval-after-load "menu-bar" '(require 'menu-bar+))
   (load-library "color-theme")
   (color-theme-initialize)
-  (require 'color-theme-random)
+  ;(require 'color-theme-random)
   ;(setq default-cursor-type 'hbar) ; (setq default-cursor-type '(hbar . 2))
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
@@ -35,16 +40,36 @@
 (global-font-lock-mode 1)
 (setq font-lock-maximum-decoration t)
 
+(add-to-list 'default-frame-alist '(font . "fixed"))
 
 
+;;;
 
+  
+(defun tidy-buffer-internal ()
+  (shell-command-on-region (point-min) (point-max) "tidy -i"
+			   (current-buffer)
+			   t
+			   )
+  )
+
+(fset 'debody
+   [?\C-[ ?< ?\C-s ?< ?b ?o ?d ?y ?> ?\C-s ?\C-n ?\C-a ?\C-[ ?< ?\C-x ?\C-x ?\C-w ?\C-s ?< ?/ ?b ?o ?d ?y ?\C-p ?\C-e ?\C-[ ?> ?\C-x ?\C-x ?\C-w return ?\C-x ?\C-s])
+
+
+(defun tidy-buffer ()
+  (interactive)
+  (tidy-buffer-internal)
+  (execute-kbd-macro 'debody))
 
 ;;; key sets
 
 
-(global-set-key (kbd "C-x C-b") 'ibuffer)
+;(global-set-key (kbd "C-x C-b") 'ibuffer)
+;(global-set-key (kbd "C-x C-b") 'buffer-menu)
 
 (global-set-key (kbd "<f12>")   'goto-line)
+
 (global-set-key (kbd "C-h") 'backward-delete-char)
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
@@ -70,9 +95,19 @@
 
 (require 'cperl-mode)
 (defalias 'perl-mode 'cperl-mode)
+
 (cperl-set-style "CPerl")
  (setq cperl-invalid-face nil) 
 (add-hook 'cperl-mode-hook 'imenu-add-menubar-index)
+
+(setq cperl-continued-brace-offset -2
+      cperl-continued-statement-offset 2
+      cperl-indent-left-aligned-comments nil
+      cperl-indent-level 4
+      cperl-indentation-style "BSD"
+      cperl-syntaxify-by-font-lock t)
+
+
 
 ;;; latex
 
@@ -130,15 +165,15 @@
 
 ;;; lisp
 
-(setq inferior-lisp-program "sbcl")
+;(setq inferior-lisp-program "sbcl")
 
-(defun lisp-send-buffer ()
-  (interactive)
-  (lisp-eval-region (point-min) (point-max)))
+;; (defun lisp-send-buffer ()
+;;   (interactive)
+;;   (lisp-eval-region (point-min) (point-max)))
 
-(setq debug-on-error t)
+;; (setq debug-on-error t)
 
-(global-set-key (kbd "<f5>")   'lisp-send-buffer)
+;; (global-set-key (kbd "<f5>")   'lisp-send-buffer)
 
 ;;; scheme
 
@@ -154,15 +189,27 @@
 
 ;;; misc
 
-(fset 'six-windows
+(fset 'six-windows-emacs-22
    "\C-x1\C-x3\C-x3\C-x+\C-x2\C-xo\C-xo\C-x2\C-xo\C-xo\C-x2")
+
+
+(fset 'six-windows
+   [?\C-[ ?x ?s ?e ?t ?- ?d ?e ?f tab return ?f ?i ?x ?e ?d return ?\C-x ?1 ?\C-x ?3 ?\C-x ?3 ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-x ?2 ?\C-x ?o ?\C-x ?o ?\C-u ?2 ?3 ?\C-x ?} ?\C-x ?o ?\C-x ?o ?\C-u ?2 ?3 ?\C-x ?} ?\C-x ?o ?\C-x ?o ?\C-u ?2 ?4 ?\C-x ?{])
+
+
+
+(defun startup ()
+  (interactive)
+  (set-default-font "fixed")
+  (six-windows))
+
 
 ;;; TRAMP
 
-(add-to-list 'backup-directory-alist
-	     (cons tramp-file-name-regexp nil))
+;(add-to-list 'backup-directory-alist (cons tramp-file-name-regexp nil))
 
 (setq tramp-default-method "rsync")
+
 
 
 
