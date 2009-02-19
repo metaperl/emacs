@@ -70,7 +70,7 @@
 
 (require 'cperl-mode)
 (defalias 'perl-mode 'cperl-mode)
-(cperl-set-style 'gnu)
+(cperl-set-style "CPerl")
  (setq cperl-invalid-face nil) 
 (add-hook 'cperl-mode-hook 'imenu-add-menubar-index)
 
@@ -162,7 +162,7 @@
 (add-to-list 'backup-directory-alist
 	     (cons tramp-file-name-regexp nil))
 
-;(setq tramp-default-method "rsync")
+(setq tramp-default-method "rsync")
 
 
 
