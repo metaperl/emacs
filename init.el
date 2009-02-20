@@ -1,6 +1,8 @@
 (setq debug-on-error t)
 (setq initial-scratch-message nil)
 
+(setq case-fold-search t)
+
 ;;; desktop
 
 ;(require 'desktop)
