@@ -91,16 +91,8 @@
 (require 'comint)
 (add-to-list 'comint-output-filter-functions 'comint-truncate-buffer)
 
-;;; cperl-mode is preferred to perl-mode                                        
 
-(require 'cperl-mode)
-(defalias 'perl-mode 'cperl-mode)
-(setq cperl-continued-brace-offset -2
-      cperl-continued-statement-offset 2
-      cperl-indent-left-aligned-comments nil
-      cperl-indent-level 4
-      cperl-indentation-style "BSD"
-      cperl-syntaxify-by-font-lock t)
+
 
 
 ;;; latex
