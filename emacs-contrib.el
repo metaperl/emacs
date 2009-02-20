@@ -52,11 +52,17 @@
       (add-to-list 'load-path "c:/tmp/c/technomancy-clojure-mode")
       (require 'clojure-mode)
 
+
       (setq clojure-src-root "c:/tmp/c")
       (clojure-slime-config)
 
       (autoload 'clojure-mode "clojure-mode" "A major mode for Clojure" t)
       (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))))
+
+      )
+  )
+
+
 
 
 ;;; cperl-mode
