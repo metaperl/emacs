@@ -240,3 +240,15 @@
      (insert comma-char) 
      (backward-char 1)) 
    (buffer-string)))
+
+
+;; ido
+
+   (require 'ido)
+    (ido-mode t)
+
+;;; 
+
+
+
+(setq ansi-color-for-comint-mode t)
