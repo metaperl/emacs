@@ -194,7 +194,8 @@
 
 ;(add-to-list 'backup-directory-alist (cons tramp-file-name-regexp nil))
 
-(setq tramp-default-method "rsync")
+(setq tramp-default-method "ssh")
+;(setq tramp-default-method "rsync")
 
 
 
@@ -231,3 +232,12 @@
 
 
 (setq ansi-color-for-comint-mode t)
+
+
+;;;
+
+;; (copy-file 
+;;  "~/prg/wrk/opt/hei/cgi-test/ocog_cust_serv_query_cgi" 
+;;  "/tbrannon@natasha.regents.state.oh.us:/opt/hei/cgi-test/"
+;;  t)
+
