@@ -233,11 +233,7 @@
 
 (setq ansi-color-for-comint-mode t)
 
+;;; cperl-mode is preferred to perl-mode                                        
 
-;;;
-
-;; (copy-file 
-;;  "~/prg/wrk/opt/hei/cgi-test/ocog_cust_serv_query_cgi" 
-;;  "/tbrannon@natasha.regents.state.oh.us:/opt/hei/cgi-test/"
-;;  t)
+    (defalias 'perl-mode 'cperl-mode)
 
