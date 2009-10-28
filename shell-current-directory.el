@@ -3,6 +3,7 @@
 ;; Copyrght (C) 2001-2007 Daniel Polani
 
 ;; Author: Daniel Polani
+;; Fixes/Improvements: Terrence Brannon, Andreas Politz 
 ;; Submitted by Terrence Brannon <metaperl@gmail.com>
 ;; Created: 24 Sep 2007
 ;; Version: 0.1
@@ -30,6 +31,7 @@
 ;;; Change Log:
 ;; 20 Jun 2001 - submitted to gnu.emacs.sources - http://groups.google.com/group/gnu.emacs.sources/browse_thread/thread/a4a2b76ffc75e4eb/220183a660260db8?lnk=gst&q=daniel+polani&rnum=3#220183a660260db8
 ;; 24 Sep 2007 - submtted to the Emacs Lisp Package Archive
+;; 28 Oct 2009 - added shell-current-directory-other-window - http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/f3fa011e2b0d83ff#
 
 ;;; Commentary
 ;; To use this, put shell-current-directory.el somewhere on your load-path.  
@@ -120,6 +122,14 @@ original-shell-buffer)
     (set-buffer original-shell-buffer)
     (rename-buffer "*shell*"))))))
 
+(defun shell-current-directory-other-window ()
+  "Create a shell pertaining to the current window's directory but in the other window ."
+  (interactive)
+  (let (buf)
+    (save-window-excursion
+      (shell-current-directory)
+      (setq buf (current-buffer)))
+    (pop-to-buffer buf))) 
 
 (provide 'shell-current-directory)
 

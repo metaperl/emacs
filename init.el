@@ -224,18 +224,19 @@
 
 ;; ido
 
-   (require 'ido)
-    (ido-mode t)
+(require 'ido)
+(ido-mode t)
+
+(setq ido-default-file-method 'selected-window)
+(setq ido-default-buffer-method 'selected-window) 
 
 ;;; 
-
-
 
 (setq ansi-color-for-comint-mode t)
 
 ;;; cperl-mode is preferred to perl-mode                                        
 
-    (defalias 'perl-mode 'cperl-mode)
+(defalias 'perl-mode 'cperl-mode)
 
 ;;; prolog
 
