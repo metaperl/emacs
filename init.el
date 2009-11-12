@@ -5,6 +5,13 @@
 
 ;;; desktop
 
+(desktop-save-mode 1)
+
+;; Customization follows below
+(setq history-length 250)
+(add-to-list 'desktop-globals-to-save 'file-name-history)
+
+
 ;(require 'desktop)
 ;(setq desktop-save t)
 ;(setq desktop-dirname "~/.emacs.d/")
@@ -133,10 +140,10 @@
 
 ;;; proxy at work
 
-(setq url-proxy-services
-      '(
-	("http"     . "webproxy.ny.jpmorgan.com:8000")
-	))
+;; (setq url-proxy-services
+;;       '(
+;; 	("http"     . "webproxy.ny.jpmorgan.com:8000")
+;; 	))
 
 
 ;;; Python
@@ -247,3 +254,9 @@
 (setq auto-mode-alist (append '(("\\.pro$" . prolog-mode)
 				("\\.m$" . mercury-mode))
 			      auto-mode-alist))
+
+;;; pastie
+
+(setq *pastie-restricted* nil)
+
+(require 'pastie)
