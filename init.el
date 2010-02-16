@@ -105,6 +105,7 @@
 ;;; latex
 
 (add-hook 'latex-mode-hook 'turn-on-auto-fill t)
+(setq latex-run-command "pdflatex")
 
 ;;; asciidoc
 

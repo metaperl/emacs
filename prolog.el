@@ -547,7 +547,7 @@ the first column (i.e., DCG heads) inserts ` -->' and newline."
     (eclipse "eclipse")
     (mercury nil)
     (sicstus "sicstus")
-    (swi "pl")
+    (swi "/home/Administrator/tmp/pl-5.9.7/src/pl")
     (gnu "gprolog")
     (t ,(let ((names '("prolog" "gprolog" "swipl" "pl")))
  	  (while (and names
