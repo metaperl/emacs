@@ -1,41 +1,44 @@
+
+
 (setq debug-on-error t)
 (setq initial-scratch-message nil)
 
 (setq case-fold-search t)
 
-;;; desktop
+;; package.el
 
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+
+
+;; desktop
+
+(require 'desktop)
+(setq desktop-save t)
+(setq desktop-dirname "~/.emacs.d/")
 (desktop-save-mode 1)
+(setq desktop-restore-eager 3)
 
-;; Customization follows below
+
+;;; Customization follows below
 (setq history-length 250)
 (add-to-list 'desktop-globals-to-save 'file-name-history)
 
 
-;(require 'desktop)
-;(setq desktop-save t)
-;(setq desktop-dirname "~/.emacs.d/")
-;(desktop-save-mode 1)
-;(setq desktop-restore-eager 3)
 
-;;; desktopaid
-
-
-
-;;; 
+;; 
 
 (setq load-path (cons "~/emacs/" load-path))
 (load "emacs-contrib")
-
-
 
 
 (when window-system
   (eval-after-load "menu-bar" '(require 'menu-bar+))
   (load-library "color-theme")
   (color-theme-initialize)
-  ;(require 'color-theme-random)
-  ;(setq default-cursor-type 'hbar) ; (setq default-cursor-type '(hbar . 2))
+
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
   (mouse-wheel-mode 1)
