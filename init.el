@@ -10,6 +10,32 @@
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
 
+;;
+
+(defmacro if-bound-call (form &rest args)
+  "If FORM is bound as a function, call it with ARGS."
+  `(if (fboundp ',form)
+       (,form ,@args)))
+
+;;; Turn off decorations - Do this a s soon as possible
+(if-bound-call menu-bar-mode -1)
+(if-bound-call tool-bar-mode -1)
+(setq column-number-mode      t
+      inhibit-startup-message t)
+
+;;; System detection
+(defun windows-nt-p ()
+  "Test if running a Windows NT version of emacs."
+  (eq system-type 'windows-nt))
+
+(defun cygwin-p ()
+  "Test if running a Cygwin version of emacs."
+  (eq system-type 'cygwin))
+
+(defun macosx-p ()
+  "Test if running a MacOS X version of emacs."
+  (eq system-type 'darwin))
+
 ;; 
 
 (setq load-path (cons "~/emacs/" load-path))

@@ -14,5 +14,10 @@
 (add-to-list 'load-path "~/emacs-contrib/color-theme-6.6.0")
 
 
-
-
+;; Factor
+(if (windows-nt-p)
+    (let (
+	  (factor-fuel "c:/Program_Files/factor/misc/fuel/fu.el")
+	  )
+      (load-file factor-fuel)))
+      
