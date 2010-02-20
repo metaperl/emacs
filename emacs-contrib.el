@@ -13,6 +13,6 @@
 
 (add-to-list 'load-path "~/emacs-contrib/color-theme-6.6.0")
 
-;;; color-theme-random
-;(require 'color-theme-random)
+
+
 

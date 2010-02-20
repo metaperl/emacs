@@ -1,5 +1,3 @@
-
-
 (setq debug-on-error t)
 (setq initial-scratch-message nil)
 
@@ -12,22 +10,6 @@
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
 
-
-;; desktop
-
-(require 'desktop)
-(setq desktop-save t)
-(setq desktop-dirname "~/.emacs.d/")
-(desktop-save-mode 1)
-(setq desktop-restore-eager 3)
-
-
-;;; Customization follows below
-(setq history-length 250)
-(add-to-list 'desktop-globals-to-save 'file-name-history)
-
-
-
 ;; 
 
 (setq load-path (cons "~/emacs/" load-path))
@@ -38,6 +20,7 @@
   (eval-after-load "menu-bar" '(require 'menu-bar+))
   (load-library "color-theme")
   (color-theme-initialize)
+  (require 'color-theme-random)
 
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
@@ -264,3 +247,17 @@
 (setq *pastie-restricted* nil)
 
 (require 'pastie)
+
+;; desktop
+
+(require 'desktop)
+(setq desktop-save t)
+(setq desktop-dirname "~/.emacs.d/")
+(desktop-save-mode 1)
+(setq desktop-restore-eager 3)
+
+
+;;; Customization follows below
+(setq history-length 250)
+(add-to-list 'desktop-globals-to-save 'file-name-history)
+
