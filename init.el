@@ -18,10 +18,9 @@
        (,form ,@args)))
 
 ;;; Turn off decorations - Do this a s soon as possible
-(if-bound-call menu-bar-mode -1)
+
 (if-bound-call tool-bar-mode -1)
-(setq column-number-mode      t
-      inhibit-startup-message t)
+(setq column-number-mode t inhibit-startup-message t)
 
 ;;; System detection
 (defun windows-nt-p ()
@@ -114,6 +113,9 @@
 
 
 
+
+(add-hook 'text-mode-hook 'turn-on-auto-fill t)
+
 ;;; latex
 
 (add-hook 'latex-mode-hook 'turn-on-auto-fill t)
@@ -130,18 +132,18 @@
 
 ;;; dired
 
-     (add-hook 'dired-load-hook
-               (lambda ()
-                 (load "dired-x")
-                 ;; Set dired-x global variables here.  For example:
-                 ;; (setq dired-guess-shell-gnutar "gtar")
-                 ;; (setq dired-x-hands-off-my-keys nil)
-                 ))
-     (add-hook 'dired-mode-hook
-               (lambda ()
-                 ;; Set dired-x buffer-local variables here.  For example:
-                 ;(dired-omit-mode 1)
-                 ))
+(add-hook 'dired-load-hook
+	  (lambda ()
+	    (load "dired-x")
+	    ;; Set dired-x global variables here.  For example:
+	    ;; (setq dired-guess-shell-gnutar "gtar")
+	    ;; (setq dired-x-hands-off-my-keys nil)
+	    ))
+(add-hook 'dired-mode-hook
+	  (lambda ()
+	    ;; Set dired-x buffer-local variables here.  For example:
+					;(dired-omit-mode 1)
+	    ))
 
 
 (setq dired-dwim-target t) 

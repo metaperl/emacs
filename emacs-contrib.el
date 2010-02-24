@@ -15,6 +15,7 @@
 
 
 ;; Factor
+
 (if (windows-nt-p)
     (let (
 	  (factor-fuel "c:/Program_Files/factor/misc/fuel/fu.el")

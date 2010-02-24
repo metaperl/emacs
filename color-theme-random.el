@@ -60,7 +60,9 @@ interval-to-seconds)
 
 
 
-(callfunc-random-interval 'color-theme-random (* 60 60) (* 60 360))
+(defun color-theme-random-start-cycling ()
+  (interactive)
+  (callfunc-random-interval 'color-theme-random (* 60 60) (* 60 360)))
 
 
 (provide 'color-theme-random)
