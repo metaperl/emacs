@@ -19,5 +19,7 @@
     (let (
 	  (factor-fuel "c:/Program_Files/factor/misc/fuel/fu.el")
 	  )
-      (load-file factor-fuel)))
+      (progn
+	(setq fuel-scaffold-developer-name "Terrence Brannon <metaperl@gmail.com>")
+	(load-file factor-fuel))))
       
