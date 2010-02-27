@@ -21,6 +21,6 @@
 	  (factor-fuel "c:/Program_Files/factor/misc/fuel/fu.el")
 	  )
       (progn
-	(setq fuel-scaffold-developer-name "Terrence Brannon <metaperl@gmail.com>")
+	(setq fuel-scaffold-developer-name "Terrence Brannon <http://www.metaperl.org>")
 	(load-file factor-fuel))))
       
