@@ -226,7 +226,7 @@
 
 ;(add-to-list 'backup-directory-alist (cons tramp-file-name-regexp nil))
 
-(setq tramp-default-method "ssh")
+;(setq tramp-default-method "ssh")
 ;(setq tramp-default-method "rsync")
 
 
