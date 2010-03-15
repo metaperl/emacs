@@ -1,3 +1,4 @@
+
 (setq debug-on-error t)
 (setq initial-scratch-message nil)
 

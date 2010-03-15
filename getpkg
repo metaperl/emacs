@@ -1,0 +1,7 @@
+wget http://download.savannah.gnu.org/releases-noredirect/color-theme/color-theme-6.6.0.tar.gz
+
+tar xvfz color-theme-6.6.0.tar.gz
+
+wget http://projects.haskell.org/haskellmode-emacs/haskell-mode-2.7.0.tar.gz
+
+tar xvfz haskell-mode-2.7.0.tar.gz
