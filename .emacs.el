@@ -1,0 +1,1 @@
+(load "~/emacs/init.el")
