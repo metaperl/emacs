@@ -1,3 +1,6 @@
+(add-to-list 'load-path "~/emacs/")
+(add-to-list 'load-path "~/emacs-contrib/")
+
 
 (setq debug-on-error t)
 (setq initial-scratch-message nil)
@@ -38,7 +41,7 @@
 
 ;; 
 
-(setq load-path (cons "~/emacs/" load-path))
+
 (load "emacs-contrib")
 
 
@@ -115,6 +118,8 @@
 ;;; shell access
 
 (setq comint-buffer-maximum-size 20000)
+(ansi-color-for-comint-mode-on)
+
 
 ;(setq explicit-shell-file-name "bash")
 (require 'shell-current-directory)

@@ -49,9 +49,9 @@
   "The name of a shell buffer pertaining to DIR."
 
   (concat "*" 
-  (file-name-nondirectory 
-   (directory-file-name (expand-file-name default-directory))) 
-  "-shell*"))
+	  (file-name-nondirectory 
+	   (directory-file-name (expand-file-name default-directory))) 
+	  "-shell*"))
 
 
 
@@ -59,36 +59,37 @@
 
   "Return a buffer with the current default directory a process.
 This is hopefully a shell one - this is a q/d heuristic."
+  (interactive)
   
   (let ((buflist (buffer-list))
-found
-buffer
-buffer-directory
-bufproc
-retval)
+	found
+	buffer
+	buffer-directory
+	bufproc
+	retval)
     (while (and (not found) buflist)
       (setq buffer (pop buflist))
       (setq buffer-directory
-    (save-excursion 
-      (set-buffer buffer)
-      default-directory))
+	    (save-excursion 
+	      (set-buffer buffer)
+	      default-directory))
 
       (setq bufproc (get-buffer-process buffer))
 
       (if bufproc
-  (if (and (string-match "^\\(bash\\|shell\\)\\(<[0-9]*>\\)?$" 
-(process-name bufproc))
-   (string= (expand-file-name default-directory)
-    (expand-file-name buffer-directory)))
-      (setq found t))))
+	  (if (and (string-match "^\\(bash\\|shell\\)\\(<[0-9]*>\\)?$" 
+				 (process-name bufproc))
+		   (string= (expand-file-name default-directory)
+			    (expand-file-name buffer-directory)))
+	      (setq found t))))
 
     (if found
-buffer
+	buffer
       nil)))
 
-      
-    
-    
+
+
+
 
 ;;;###autoload
 (defun shell-current-directory ()
@@ -97,30 +98,30 @@ buffer
 
   (interactive)
   (let ((current-shell-buffer (directory-shell-buffer))
-original-shell-buffer)
+	original-shell-buffer)
 
     (if current-shell-buffer
-(pop-to-buffer current-shell-buffer)
+	(pop-to-buffer current-shell-buffer)
 
       ;; no current process buffer is active
       ;; if *shell* is already used, store it
       (if (buffer-live-p "*shell*")
-(save-excursion
-  (set-buffer "*shell*")
-  (setq original-shell-buffer (rename-uniquely))))
+	  (save-excursion
+	    (set-buffer "*shell*")
+	    (setq original-shell-buffer (rename-uniquely))))
       
       ;; and create a new shell process with the current directory
 
       (shell)
       (rename-buffer (directory-shell-buffer-name) t) ; unique
-    
+      
       (if original-shell-buffer ; there has been a standard
-; *shell* buffer before,
-; restore it
+					; *shell* buffer before,
+					; restore it
 
-  (save-excursion
-    (set-buffer original-shell-buffer)
-    (rename-buffer "*shell*"))))))
+	  (save-excursion
+	    (set-buffer original-shell-buffer)
+	    (rename-buffer "*shell*"))))))
 
 (defun shell-current-directory-other-window ()
   "Create a shell pertaining to the current window's directory but in the other window ."

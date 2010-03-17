@@ -96,6 +96,7 @@ With a prefix argument, toggle the current value of
                   "</paste>")))
     (with-timeout (*pastie-timeout* (error "Pastie timed out."))
       (pastie-retrieve url))))
+(setq debug-on-error t)
 
 (defun pastie-retrieve (url)
   "Submits the request and validates the response."
