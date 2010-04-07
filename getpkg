@@ -1,11 +1,15 @@
 mkdir ~/emacs-contrib
 cd ~/emacs-contrib
 
-wget http://download.savannah.gnu.org/releases-noredirect/color-theme/color-theme-6.6.0.tar.gz
+wget -c http://download.savannah.gnu.org/releases-noredirect/color-theme/color-theme-6.6.0.tar.gz
 tar xvfz color-theme-6.6.0.tar.gz
 
-wget http://projects.haskell.org/haskellmode-emacs/haskell-mode-2.7.0.tar.gz
+wget -c http://projects.haskell.org/haskellmode-emacs/haskell-mode-2.7.0.tar.gz
 tar xvfz haskell-mode-2.7.0.tar.gz
 
-wget http://stud4.tuwien.ac.at/~e0225855/ediprolog/ediprolog.el
-wget http://bruda.ca/emacs-prolog/prolog.el
+wget -c http://stud4.tuwien.ac.at/~e0225855/ediprolog/ediprolog.el
+wget -c http://bruda.ca/emacs-prolog/prolog.el
+
+##
+
+wget -c http://www.emacswiki.org/emacs/download/pastebin.el

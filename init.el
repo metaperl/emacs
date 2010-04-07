@@ -150,7 +150,7 @@
 
 (add-hook 'dired-load-hook
 	  (lambda ()
-	    (load "dired-x")
+	    (require "dired-x")
 	    ;; Set dired-x global variables here.  For example:
 	    ;; (setq dired-guess-shell-gnutar "gtar")
 	    ;; (setq dired-x-hands-off-my-keys nil)
@@ -160,7 +160,7 @@
 	    ;; Set dired-x buffer-local variables here.  For example:
 					;(dired-omit-mode 1)
 	    ))
-
+    (setq dired-omit-files-p t)
 
 (setq dired-dwim-target t) 
 
@@ -286,12 +286,6 @@
 				("\\.m$" . mercury-mode))
 			      auto-mode-alist))
 
-;;; pastie
-
-(setq *pastie-restricted* nil)
-
-(require 'pastie)
-
 ;; desktop
 
 (require 'desktop)
@@ -304,4 +298,8 @@
 ;;; Customization follows below
 (setq history-length 250)
 (add-to-list 'desktop-globals-to-save 'file-name-history)
+
+;;; paste buffer
+
+(require 'pastebin)
 
