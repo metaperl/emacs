@@ -1,6 +1,8 @@
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs-contrib/")
 
+(load "local")
+
 
 (setq debug-on-error t)
 (setq initial-scratch-message nil)
@@ -150,7 +152,7 @@
 
 (add-hook 'dired-load-hook
 	  (lambda ()
-	    (require "dired-x")
+	    (require 'dired-x)
 	    ;; Set dired-x global variables here.  For example:
 	    ;; (setq dired-guess-shell-gnutar "gtar")
 	    ;; (setq dired-x-hands-off-my-keys nil)
