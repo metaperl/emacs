@@ -1,5 +1,21 @@
+(setq debug-on-error t)
+
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs-contrib/")
+
+;;; contrib
+
+(require 'emacs-contrib)
+
+
+;;; TRAMP
+
+(require 'tramp)
+;(add-to-list 'backup-directory-alist (cons tramp-file-name-regexp nil))
+
+;(setq tramp-default-method "ssh")
+;(setq tramp-default-method "rsync")
+
 
 (load "local")
 
@@ -9,7 +25,13 @@
 
 (setq case-fold-search t)
 
+;; foldout
+
+(eval-after-load "outline" '(require 'foldout))
+
 ;; package.el
+
+
 
 (when
     (load
@@ -44,7 +66,8 @@
 ;; 
 
 
-(load "emacs-contrib")
+
+
 
 
 (when window-system
@@ -230,13 +253,6 @@
   (six-windows))
 
 
-;;; TRAMP
-
-;(add-to-list 'backup-directory-alist (cons tramp-file-name-regexp nil))
-
-;(setq tramp-default-method "ssh")
-;(setq tramp-default-method "rsync")
-
 
 
 
@@ -304,4 +320,20 @@
 ;;; paste buffer
 
 (require 'pastebin)
+
+;;; hideshow 
+
+(require 'hideshow-org)
+(add-hook 'cperl-mode-hook 'hs-org/minor-mode)
+
+;;; 
+
+(defun perltidy ()
+  "run perltidy"
+  (interactive)
+  (shell-command-on-region (point) (mark)
+			   "perltidy -q" nil t))
+
+
+;;; (require 'foldling)
 

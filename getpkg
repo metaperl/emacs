@@ -1,5 +1,12 @@
+#!/bin/bash -x
+
 mkdir ~/emacs-contrib
 cd ~/emacs-contrib
+
+wget http://github.com/jrockway/cperl-mode/raw/e7591e474edc5f4db488e8b35d99c5e9047d88c7/cperl-mode.el
+
+
+exit
 
 wget -c http://download.savannah.gnu.org/releases-noredirect/color-theme/color-theme-6.6.0.tar.gz
 tar xvfz color-theme-6.6.0.tar.gz
