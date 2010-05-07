@@ -3,16 +3,6 @@
 mkdir ~/emacs-contrib
 cd ~/emacs-contrib
 
-git clone http://github.com/secelis/hideshow-org.git
-git clone http://github.com/jrockway/cperl-mode.git
-
-
-wget -c http://www.emacswiki.org/emacs/download/pastebin.el
-
-
-
-exit
-
 wget -c http://download.savannah.gnu.org/releases-noredirect/color-theme/color-theme-6.6.0.tar.gz
 tar xvfz color-theme-6.6.0.tar.gz
 
@@ -24,4 +14,14 @@ wget -c http://bruda.ca/emacs-prolog/prolog.el
 
 ##
 
+
+git clone http://github.com/secelis/hideshow-org.git
+git clone http://github.com/jrockway/cperl-mode.git
+
+
+wget -c http://www.emacswiki.org/emacs/download/pastebin.el
+
+
+
+exit
 
