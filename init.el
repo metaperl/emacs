@@ -7,10 +7,10 @@
 
 (setq debug-on-error t)
 
+
 (add-to-list 'load-path "~/emacs/")
+(add-to-list 'load-path "~/emacs/init/")
 (add-to-list 'load-path "~/emacs-contrib/")
-(add-to-list 'load-path "~/emacs-contrib/hideshow-org")
-(add-to-list 'load-path "~/emacs-contrib/cperl-mode")
 
 (require 'emacs-contrib)
 

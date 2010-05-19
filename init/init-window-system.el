@@ -9,5 +9,6 @@
   (mouse-wheel-mode 1)
 )
 
+(if (eq window-system 'x) (setq x-select-enable-clipboard t))
 
 (provide 'init-window-system)

@@ -82,15 +82,6 @@
 (add-to-list 'desktop-globals-to-save 'file-name-history)
 
 
-;;; Customization follows below
-(setq history-length 250)
-
-;; ELPA
-
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))
 
 
 

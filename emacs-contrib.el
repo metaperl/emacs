@@ -17,6 +17,13 @@
 
 (add-to-list 'load-path "~/emacs-contrib/color-theme-6.6.0")
 
+;; emacs-contrib
+
+(add-to-list 'load-path "~/emacs-contrib/clojure-mode")
+(setq inferior-lisp-program "java -cp /home/metaperl/.clojure/clojure.jar clojure.main")
+(require 'clojure-mode)
+
+
 
       
 

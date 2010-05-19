@@ -1,7 +1,16 @@
 #!/bin/bash -x
 
-mkdir ~/emacs-contrib
+if [ ! -d work ]
+  mkdir ~/emacs-contrib
+fi
+
 cd ~/emacs-contrib
+
+git clone http://github.com/technomancy/clojure-mode.git
+
+exit
+
+##
 
 wget -c http://download.savannah.gnu.org/releases-noredirect/color-theme/color-theme-6.6.0.tar.gz
 tar xvfz color-theme-6.6.0.tar.gz
