@@ -9,7 +9,7 @@
 (global-font-lock-mode 1)
 (setq font-lock-maximum-decoration t)
 
-(setq case-fold-search t)
+(setq-default case-fold-search t)
 
 (show-paren-mode t)
 (setq show-paren-style 'parenthesis) ; 'mixed)
