@@ -1,12 +1,11 @@
 #!/bin/bash -x
 
-if [ ! -d work ]
-  mkdir ~/emacs-contrib
-fi
+mkdir ~/emacs-contrib
+
 
 cd ~/emacs-contrib
 
-git clone http://github.com/technomancy/clojure-mode.git
+wget http://stud4.tuwien.ac.at/~e0225855/ediprolog/ediprolog.el
 
 exit
 
@@ -18,7 +17,7 @@ tar xvfz color-theme-6.6.0.tar.gz
 wget -c http://projects.haskell.org/haskellmode-emacs/haskell-mode-2.7.0.tar.gz
 tar xvfz haskell-mode-2.7.0.tar.gz
 
-wget -c http://stud4.tuwien.ac.at/~e0225855/ediprolog/ediprolog.el
+
 wget -c http://bruda.ca/emacs-prolog/prolog.el
 
 ##
