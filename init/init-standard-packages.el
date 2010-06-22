@@ -82,7 +82,8 @@
 (add-to-list 'desktop-globals-to-save 'file-name-history)
 
 
+;; bookmark
 
-
+(setq-default bookmark-default-file "~/emacs/bmk.el")
 
 (provide 'init-standard-packages)
