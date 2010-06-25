@@ -18,10 +18,5 @@
 
 (require 'pastebin)
 
-;;; hideshow 
-
-(require 'hideshow-org)
-(add-hook 'cperl-mode-hook 'hs-org/minor-mode)
-
 
 (provide 'init-emacs)

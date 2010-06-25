@@ -40,7 +40,7 @@
 (semantic-load-enable-code-helpers)
 
 ;;;
-(add-to-list 'load-path  "~/emacs-contrib/ecb")
+(add-to-list 'load-path  "~/emacs-contrib/ecb-2.40")
 
 (require 'ecb)
 

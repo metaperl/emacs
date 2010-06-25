@@ -1,13 +1,15 @@
 #!/bin/bash -x
 
 mkdir ~/emacs-contrib
-
-
 cd ~/emacs-contrib
 
-wget http://stud4.tuwien.ac.at/~e0225855/ediprolog/ediprolog.el
+
+wget http://downloads.sourceforge.net/project/cedet/cedet/1.0pre7/cedet-1.0pre7.tar.gz?use_mirror=hivelocity
 
 exit
+
+
+wget http://stud4.tuwien.ac.at/~e0225855/ediprolog/ediprolog.el
 
 ##
 
