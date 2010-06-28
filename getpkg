@@ -4,9 +4,14 @@ mkdir ~/emacs-contrib
 cd ~/emacs-contrib
 
 
-wget http://downloads.sourceforge.net/project/cedet/cedet/1.0pre7/cedet-1.0pre7.tar.gz?use_mirror=hivelocity
+wget http://ecb.sourceforge.net/cvs_snapshots/ecb.tar.gz
+tar xvfz ecb.tar.gz
 
 exit
+
+wget http://downloads.sourceforge.net/project/cedet/cedet/1.0pre7/cedet-1.0pre7.tar.gz?use_mirror=hivelocity
+
+
 
 
 wget http://stud4.tuwien.ac.at/~e0225855/ediprolog/ediprolog.el
