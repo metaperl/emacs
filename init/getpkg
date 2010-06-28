@@ -3,11 +3,19 @@
 mkdir ~/emacs-contrib
 cd ~/emacs-contrib
 
+wget http://download.gna.org/color-theme/color-theme-6.6.0.tar.gz
+tar xvfz color-theme-6.6.0.tar.gz
+
+exit
+
+git clone http://github.com/defunkt/gist.el.git
+
+
 
 wget http://ecb.sourceforge.net/cvs_snapshots/ecb.tar.gz
 tar xvfz ecb.tar.gz
 
-exit
+
 
 wget http://downloads.sourceforge.net/project/cedet/cedet/1.0pre7/cedet-1.0pre7.tar.gz?use_mirror=hivelocity
 

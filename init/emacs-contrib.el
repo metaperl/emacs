@@ -1,7 +1,8 @@
 ;;; 
 
+(add-to-list 'load-path "~/emacs-contrib/gist.el")
+(require 'gist)
 
-(require 'cperl-mode)
 
 ;;; asciidoc
 

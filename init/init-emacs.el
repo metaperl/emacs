@@ -14,9 +14,5 @@
 
 
 
-;;; paste buffer
-
-(require 'pastebin)
-
 
 (provide 'init-emacs)
