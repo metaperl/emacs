@@ -2,6 +2,10 @@
 (setq tramp-default-proxies-alist nil)
 
 (add-to-list 'tramp-default-proxies-alist
+	     '("nimbus2.securesites.net" nil "/ssh:root@nm.vwh.net:"))
+
+
+(add-to-list 'tramp-default-proxies-alist
 	     '("txn95.boca95-verio.com" nil "/ssh:t.brannon@jump0.wh.verio.net:"))
 
 (add-to-list 'tramp-default-proxies-alist
