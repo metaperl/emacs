@@ -9,7 +9,7 @@
 	     '("txn95.boca95-verio.com" nil "/t.brannon@jump0.wh.verio.net:"))
 
 (add-to-list 'tramp-default-proxies-alist
-	     '("app95a.boca95-verio.com" nil "/t.brannon@jump0.wh.verio.net:"))
+	     '("app95a.boca95-verio.com" nil "/root@txn95.boca95-verio.com:"))
 
 (add-to-list 'tramp-default-proxies-alist
 	     '("mmm9500.boca95-verio.com" nil "/t.brannon@jump0.wh.verio.net:"))
