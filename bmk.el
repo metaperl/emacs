@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("root@nimbus2.securesites.net"
+(("txn95-cgi-bin-secure"
+ (filename . "/ssh:root@txn95.boca95-verio.com:/u/httpd/cgi-bin/secure/")
+ (front-context-string . "  -rwxr-x--- 1 d")
+ (rear-context-string . " /u/bin/wrapper\n")
+ (position . 3882))
+("root@nimbus2.securesites.net"
  (filename . "/ssh:root@nimbus2.securesites.net:/root/")
  (front-context-string . ".bash_history\n  ")
  (rear-context-string . "82 Jun 30 18:52 ")
