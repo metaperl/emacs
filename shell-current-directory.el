@@ -3,7 +3,7 @@
 ;; Copyrght (C) 2001-2007 Daniel Polani
 
 ;; Author: Daniel Polani
-;; Fixes/Improvements: Terrence Brannon, Andreas Politz 
+;; Fixes/Improvements: Terrence Brannon, Andreas Politz, Michael Albinus
 ;; Submitted by Terrence Brannon <metaperl@gmail.com>
 ;; Created: 24 Sep 2007
 ;; Version: 0.1
@@ -45,13 +45,18 @@
 
 
 (defun directory-shell-buffer-name ()
-
   "The name of a shell buffer pertaining to DIR."
-
-  (concat "*" 
-	  (file-name-nondirectory 
-	   (directory-file-name (expand-file-name default-directory))) 
+  (concat "*"
+	  (if (file-remote-p default-directory)
+	      (concat (file-remote-p default-directory 'user) "@"
+		      (file-remote-p default-directory 'host) ":"))
+	  (file-name-nondirectory
+	   (directory-file-name (expand-file-name default-directory)))
 	  "-shell*"))
+;; (concat "*" 
+;; 	  (file-name-nondirectory 
+;; 	   (directory-file-name (expand-file-name default-directory))) 
+;; 	  "-shell*"))
 
 
 
