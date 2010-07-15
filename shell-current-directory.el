@@ -43,15 +43,17 @@
 ;; you are visiting, simply type: M-x shell-current-directory
 
 
-
 (defun directory-shell-buffer-name ()
   "The name of a shell buffer pertaining to DIR."
+  (interactive)
   (concat "*"
 	  (if (file-remote-p default-directory)
-	      (concat (file-remote-p default-directory 'user) "@"
-		      (file-remote-p default-directory 'host) ":"))
-	  (file-name-nondirectory
-	   (directory-file-name (expand-file-name default-directory)))
+	      (concat 
+	       (file-remote-p default-directory 'host) ":"
+	       (file-remote-p default-directory 'localname)
+	       )
+	    (file-name-nondirectory
+	     (directory-file-name (expand-file-name default-directory))))
 	  "-shell*"))
 ;; (concat "*" 
 ;; 	  (file-name-nondirectory 
