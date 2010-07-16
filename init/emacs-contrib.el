@@ -1,12 +1,13 @@
-;;; 
+(add-to-list 'load-path "~/emacs/contrib/")
 
-(add-to-list 'load-path "~/emacs-contrib/gist.el")
+;; gist
+(add-to-list 'load-path "~/emacs/contrib/gist.el/")
 (require 'gist)
 
 
 ;;; asciidoc
 
-(add-to-list 'load-path "~/emacs-contrib/asciidoc-el")
+(add-to-list 'load-path "~/emacs/contrib/asciidoc-el")
    (autoload 'doc-mode "doc-mode" nil t)
    (add-to-list 'auto-mode-alist '("\\.adoc$" . doc-mode))
    (add-hook 'doc-mode-hook
@@ -16,11 +17,11 @@
 
 ;; color-theme
 
-(add-to-list 'load-path "~/emacs-contrib/color-theme-6.6.0")
+(add-to-list 'load-path "~/emacs/contrib/color-theme-6.6.0")
 
 ;; Load CEDET.
 ;; See cedet/common/cedet.info for configuration details.
-(load-file "~/emacs-contrib/cedet-1.0pre7/common/cedet.el")
+(load-file "~/emacs/contrib/cedet-1.0pre7/common/cedet.el")
 
 
 ;; Enable EDE (Project Management) features
@@ -41,7 +42,7 @@
 (semantic-load-enable-code-helpers)
 
 ;;;
-(add-to-list 'load-path  "~/emacs-contrib/ecb-snap")
+(add-to-list 'load-path  "~/emacs/contrib/ecb-snap")
 
 (require 'ecb)
 

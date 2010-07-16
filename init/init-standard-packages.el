@@ -1,4 +1,4 @@
-(require 'init-tramp)
+
 (require 'init-uniquify)
 (require 'init-shell)
 (require 'init-dired)

@@ -5,17 +5,15 @@
 ;; inspired by technomancy's emacs starter kit
 ;; http://github.com/technomancy/emacs-starter-kit/blob/master/init.el
 
-(setq debug-on-error t)
-
+(setq stack-trace-on-error t)
 
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
-(add-to-list 'load-path "~/emacs-contrib/")
 
 (require 'emacs-contrib)
 
-(load "local")
-
+(require 'init-buffer-menu)
+(require 'init-tramp)
 (require 'init-functions)
 (require 'init-emacs)
 (require 'init-set-key)
