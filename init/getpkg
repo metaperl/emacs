@@ -4,16 +4,18 @@
 mkdir ~/emacs-contrib
 cd ~/emacs-contrib
 
-cvs -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/tramp co tramp
+git clone http://github.com/defunkt/gist.el.git
 
+exit
+
+cvs -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/tramp co tramp
 pushd tramp
 autoconf
 ./configure --with-contrib
-make
-
+makexd
 popd
 
-exit
+
 
 
 wget http://download.gna.org/color-theme/color-theme-6.6.0.tar.gz
@@ -21,7 +23,7 @@ tar xvfz color-theme-6.6.0.tar.gz
 
 
 
-git clone http://github.com/defunkt/gist.el.git
+
 
 
 

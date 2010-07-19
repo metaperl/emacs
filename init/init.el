@@ -10,6 +10,7 @@
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
+(require 'init-edan)
 (require 'emacs-contrib)
 
 (require 'init-buffer-menu)
