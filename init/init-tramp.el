@@ -57,10 +57,12 @@
 
 
 ; (add-to-list 'load-path "~/emacs/contrib/tramp/lisp")
+
 (require 'tramp)
 
 (add-to-list 'tramp-remote-path "/usr/bsd")
 
 ; (setq tramp-verbose 6)
+; (tramp-cleanup-all-connections)
 
 (provide 'init-tramp)
