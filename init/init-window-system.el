@@ -1,8 +1,8 @@
 (when window-system
   (eval-after-load "menu-bar" '(require 'menu-bar+))
-  (load-library "color-theme")
-  (color-theme-initialize)
-  (require 'color-theme-random)
+;  (load-library "color-theme")
+ ; (color-theme-initialize)
+;  (require 'color-theme-random)
 
   (tool-bar-mode 0)
   (scroll-bar-mode -1)

@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("tramp.el"
+(("mnb9600"
+ (filename . "/ssh:root@mnb9600.sterling96-verio.com:/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "62 Feb 19  2008 ")
+ (position . 210))
+("tramp.el"
  (filename . "/usr/local/share/emacs/23.2/lisp/net/tramp.el")
  (front-context-string . "(defcustom tramp")
  (rear-context-string . "type 'boolean)\n\n")

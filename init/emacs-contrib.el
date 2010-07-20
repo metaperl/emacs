@@ -13,10 +13,6 @@
 ;; 	     (require 'asciidoc)))
 
 
-;;;
-(add-to-list 'load-path  "~/emacs/contrib/ecb-snap")
-
-(require 'ecb)
 
 
       
