@@ -15,5 +15,6 @@
 ;; bookmark
 
 (setq-default bookmark-default-file "~/emacs/bmk.el")
+(setq-default bookmark-save-flag 1)
 
 (provide 'init-standard-packages)

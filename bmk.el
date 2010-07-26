@@ -2,7 +2,32 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("mnb9600"
+(("txn96"
+ (filename . "/ssh:root@txn96.sterling96-verio.com:/u/autobahn/sap/test-scripts/")
+ (front-context-string . "kj\n  dr-xr-")
+ (rear-context-string . "17 Apr 17  2009 ")
+ (position . 139))
+("app96a"
+ (filename . "/ssh:root@app96a.sterling96-verio.com:/u/autobahn/perl5lib/VWH/DIY/CM4all.pm")
+ (front-context-string . "\n    my $script ")
+ (rear-context-string . "ileInfo;\n    }\n\n")
+ (position . 41409))
+("alm.boca.verio.net-root"
+ (filename . "/ssh:root@alm.boca.verio.net:/root/")
+ (front-context-string . "\n  drwxr-xr-x  4")
+ (rear-context-string . "20 09:20 .bashrc")
+ (position . 455))
+("afm.boca.verio.net-root"
+ (filename . "/ssh:root@afm.boca.verio.net:/")
+ (front-context-string . "\n  -rw-------   ")
+ (rear-context-string . "2008 .Xauthority")
+ (position . 265))
+("aim.boca.verio.net"
+ (filename . "/ssh:root@aim.boca.verio.net:/root/")
+ (front-context-string . ".Xauthority\n  -r")
+ (rear-context-string . "26 Jan  4  2006 ")
+ (position . 232))
+("mnb9600"
  (filename . "/ssh:root@mnb9600.sterling96-verio.com:/")
  (front-context-string . ".bash_history\n  ")
  (rear-context-string . "62 Feb 19  2008 ")
