@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("txn96"
+(("nimbus-apache-controlplanel-Domain.pm"
+ (filename . "/scp:root@martin.opbdev.net:/usr/local/rapture/lib/perl5/Rapture/Application/Apache/ControlPanel/Domain.pm")
+ (front-context-string . "    'legacy',\n  ")
+ (rear-context-string . " ),\n            ")
+ (position . 38568))
+("txn96"
  (filename . "/ssh:root@txn96.sterling96-verio.com:/u/autobahn/sap/test-scripts/")
  (front-context-string . "kj\n  dr-xr-")
  (rear-context-string . "17 Apr 17  2009 ")
