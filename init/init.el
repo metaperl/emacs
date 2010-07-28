@@ -10,14 +10,14 @@
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
-;(require 'init-edan)
-;(require 'emacs-contrib)
+(require 'init-edan)
+
 
 (require 'init-buffer-menu)
 (require 'init-tramp)
 (require 'init-functions)
-(require 'init-emacs)
-(require 'init-set-key)
+
+
 (require 'init-settings)
 (require 'init-standard-packages)
 (require 'init-windows-xp)
