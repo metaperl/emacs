@@ -1,9 +1,11 @@
 ;;;
 ;;; asciidoc
 
-(autoload 'doc-mode "doc-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.adoc$" . doc-mode))
-(add-hook 'doc-mode-hook
+(autoload 'doc-mode   "doc-mode" nil t)
+(autoload 'adoc-mode "adoc-mode" nil t)
+(require 'adoc-mode)
+(add-to-list 'auto-mode-alist '("\\.adoc$" . adoc-mode))
+(add-hook 'adoc-mode-hook
 	  '(lambda ()
 	     (turn-on-auto-fill)
 	     (require 'asciidoc)))
@@ -37,6 +39,7 @@
 
 (global-set-key (kbd "C-h") 'backward-delete-char)
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
+(global-set-key (kbd "C-x 0") 'other-window)
 
 
 (provide 'init-settings)
