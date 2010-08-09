@@ -16,13 +16,12 @@
   (interactive)
   (delete-other-windows)
   (split-window-vertically)
-  (setq windowColumns
-    (let ((edges (window-edges))) (- (nth 2 edges) (nth 0 edges))) )
-  (split-window-horizontally (round (* windowColumns 0.66)))
   (split-window-horizontally)
-  (previous-multiframe-window)
-  (split-window-horizontally (round (* windowColumns 0.66)))
   (split-window-horizontally)
+  (other-window 3)
+  (split-window-horizontally)
+  (split-window-horizontally)
+  (balance-windows)
 )
 
 (global-set-key (kbd "C-x 6") 'MakeSixWindows)

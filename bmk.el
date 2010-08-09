@@ -2,7 +2,22 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("martin-sdf_invoice.pl"
+(("app95a:lib.log"
+ (filename . "/ssh:root@app95a.boca95-verio.com:/u/autobahn/logs/include/lib.log")
+ (front-context-string . "NOTE:  VWH::API:")
+ (rear-context-string)
+ (position . 1))
+("txn95-VWH::API::Site::Change"
+ (filename . "/ssh:root@txn95.boca95-verio.com:/u/autobahn/perl5lib/VWH/API/Site/Change.pm")
+ (front-context-string . "package VWH::API")
+ (rear-context-string)
+ (position . 1))
+("linode-ursala-webiste"
+ (filename . "/ssh:schemelab@li2-168.members.linode.com:/home/schemelab/domains/org/metaperl/www/ursala/asciidoc/examples/website/")
+ (front-context-string . "ASCIIMathML.js -")
+ (rear-context-string . "32 Jul 28 11:00 ")
+ (position . 287))
+("martin-sdf_invoice.pl"
  (filename . "/scp:root@martin.opbdev.net:/usr/local/vwh/library/perl/SDF/sdf_invoice.pl")
  (front-context-string . "#\n# $SMEId: nimb")
  (rear-context-string)

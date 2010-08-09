@@ -36,7 +36,7 @@
   "run perltidy"
   (interactive)
   (shell-command-on-region (point) (mark)
-			   "perltidy -q -l=140 " nil t))
+			   "perltidy -q -i=2 -l=140 " nil t))
 
 
 
