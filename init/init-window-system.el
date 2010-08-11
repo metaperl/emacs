@@ -9,6 +9,9 @@
   (mouse-wheel-mode 1)
 )
 
+(setq scroll-step           1
+         scroll-conservatively 10000)
+
 (if (eq window-system 'x) (setq x-select-enable-clipboard t))
 
 ;;; http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/01b7d4153acf6336#

@@ -108,7 +108,7 @@ This is hopefully a shell one - this is a q/d heuristic."
 	original-shell-buffer)
 
     (if current-shell-buffer
-	(pop-to-buffer current-shell-buffer)
+	(pop-to-buffer current-shell-buffer nil)
 
       ;; no current process buffer is active
       ;; if *shell* is already used, store it
