@@ -10,18 +10,14 @@
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
-(require 'init-edan)
 
-
-(require 'init-buffer-menu)
 (require 'init-tramp)
 (require 'init-functions)
 
 
 (require 'init-settings)
 (require 'init-standard-packages)
-(require 'init-windows-xp)
-(require 'init-window-system)
+(require 'init-custom)
 
 ;; "Emacs outshines all other editing software in approximately the
 ;; same way that the noonday sun does the stars. It is not just bigger

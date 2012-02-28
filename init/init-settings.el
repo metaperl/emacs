@@ -1,14 +1,14 @@
 ;;;
 ;;; asciidoc
 
-(autoload 'doc-mode   "doc-mode" nil t)
-(autoload 'adoc-mode "adoc-mode" nil t)
-(require 'adoc-mode)
-(add-to-list 'auto-mode-alist '("\\.adoc$" . adoc-mode))
-(add-hook 'adoc-mode-hook
-	  '(lambda ()
-	     (turn-on-auto-fill)
-	     (require 'asciidoc)))
+;; (autoload 'doc-mode   "doc-mode" nil t)
+;; (autoload 'adoc-mode "adoc-mode" nil t)
+;; (require 'adoc-mode)
+;; (add-to-list 'auto-mode-alist '("\\.adoc$" . adoc-mode))
+;; (add-hook 'adoc-mode-hook
+;; 	  '(lambda ()
+;; 	     (turn-on-auto-fill)
+;; 	     (require 'asciidoc)))
 ;;;
 
 
