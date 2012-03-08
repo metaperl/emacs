@@ -17,6 +17,8 @@
 
 (setq visible-bell t)
 
+(setq-default indent-tabs-mode nil)
+
 
 (require 'font-lock)
 (global-font-lock-mode 1)
