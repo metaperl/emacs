@@ -11,6 +11,8 @@
 (add-to-list 'load-path "~/emacs/init/")
 
 
+(require 'init-themes)
+
 (require 'init-tramp)
 (require 'init-functions)
 

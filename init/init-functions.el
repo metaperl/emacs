@@ -39,5 +39,23 @@
 			   "perltidy -q -i=2 -l=140 " nil t))
 
 
+(defun mywin ()
+  (interactive)
+  (delete-other-windows)
+  (split-window-horizontally)
+  (split-window-horizontally)
+  (balance-windows)
+  (split-window-vertically)
+  (other-window 2)
+  (split-window-vertically))
+
+(defun my3win ()
+  (interactive)
+  (delete-other-windows)
+  (split-window-horizontally)
+  (split-window-horizontally)
+  (balance-windows))
+
+
 
 (provide 'init-functions)
