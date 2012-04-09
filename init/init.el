@@ -5,11 +5,17 @@
 ;; inspired by technomancy's emacs starter kit
 ;; http://github.com/technomancy/emacs-starter-kit/blob/master/init.el
 
-; (setq stack-trace-on-error t)
+
+(setq stack-trace-on-error t)
 
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
+(require 'init-delete-trailing-whitespace)
+
+;(require 'init-cedet)
+
+;(require 'init-tmp)
 
 (require 'init-themes)
 

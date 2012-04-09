@@ -1147,6 +1147,8 @@ options with their old \(before the upgrade/reset) and new values."
 
 (defvar ecb-all-requirements-available nil)
 
+
+
 (defun ecb-check-requirements ()
   "Ensure that if all requirements of ECB are fulfilled.
 
@@ -1185,6 +1187,8 @@ Currently this is a check if the right `cedet-version is loaded."
                    version-error))))
   (when ecb-all-requirements-available
     (message "All requirements for ECB %s fulfilled - Enjoy it!" ecb-version)))
+
+(defun ecb-check-requirements () t)
 
 
 (defun ecb-package-version-str2list (ver-str)

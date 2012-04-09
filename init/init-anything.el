@@ -1,6 +1,6 @@
 
 
-(add-to-list 'load-path "~/emacs/custom/anything-config/")
+(add-to-list 'load-path "~/emacs/pkg/anything-config/")
 (require 'anything-config)
 
 (global-set-key (kbd "C-x b") 'anything)

@@ -8,6 +8,6 @@
 
 
 
-; you could add a function to mako-nxhtml-mumamo-mode-hook
+; (setq debug-on-error t)
 
 (provide 'init-ecb)
