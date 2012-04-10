@@ -8,7 +8,7 @@
 
 ;(require 'init-desktopaid)
 
-(require 'init-ecb)
+(require 'init-workgroups)
 
 (require 'init-paste-kde)
 
