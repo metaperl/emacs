@@ -1,5 +1,5 @@
 
-(add-to-list 'custom-theme-load-path "~/emacs/themes")
+;(add-to-list 'custom-theme-load-path "~/emacs/themes")
 
 
 

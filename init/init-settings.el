@@ -14,7 +14,9 @@
 
 
 (if-bound-call tool-bar-mode -1)
-(scroll-bar-mode -1)
+(if-bound-call scroll-bar-mode -1)
+(if-bound-call menu-bar-mode -1)
+
 
 (setq visible-bell t)
 
@@ -30,7 +32,7 @@
 (show-paren-mode t)
 (setq show-paren-style 'parenthesis) ; 'mixed)
 
-;;; 
+;;;
 
 (require 'autorevert)
 (global-auto-revert-mode 1)

@@ -16,3 +16,4 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'set-goal-column 'disabled nil)
+(put 'narrow-to-region 'disabled nil)

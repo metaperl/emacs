@@ -8,6 +8,8 @@
 
 (setq stack-trace-on-error t)
 
+(server-start)
+
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
