@@ -26,8 +26,9 @@
 
 
 (require 'init-settings)
+
 (require 'init-standard-packages)
-(require 'init-custom)
+
 (require 'init-pkg)
 
 ;; "Emacs outshines all other editing software in approximately the

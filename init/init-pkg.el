@@ -1,8 +1,7 @@
-(setq debug-on-error t)
 
 (add-to-list 'load-path "~/emacs/pkg")
 
-(require 'pastebin)
+
 
 (require 'init-anything)
 
