@@ -1,0 +1,1 @@
+bzr co --lightweight -v bzr://bzr.savannah.gnu.org/emacs/trunk emacs
