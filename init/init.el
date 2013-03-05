@@ -25,6 +25,7 @@
 (require 'init-functions)
 (require 'init-backup-files)
 
+(require 'init-scrolling)
 (require 'init-settings)
 
 (require 'init-standard-packages)
