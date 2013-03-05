@@ -7,14 +7,17 @@
 	    ;; (setq dired-guess-shell-gnutar "gtar")
 	    ;; (setq dired-x-hands-off-my-keys nil)
 	    ))
-(add-hook 'dired-mode-hook
-	  (lambda ()
-	    ;; Set dired-x buffer-local variables here.  For example:
-					;(dired-omit-mode 1)
-	    ))
-    (setq dired-omit-files-p t)
 
-(setq dired-dwim-target t) 
+;; (add-hook 'dired-mode-hook
+;; 	  (lambda ()
+;; 	    ;; Set dired-x buffer-local variables here.  For example:
+;; 					;(dired-omit-mode 1)
+;; 	    ))
+;;     (setq dired-omit-mode t)
+
+(setq dired-omit-mode nil)
+
+(setq dired-dwim-target t)
 
 
 (provide 'init-dired)

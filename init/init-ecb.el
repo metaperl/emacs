@@ -1,12 +1,15 @@
 
-(setq org-path "~/emacs/pkg/ecb-2.40/")
+(require 'cedet)
 
-(setq load-path (cons org-path load-path))
+ (semantic-mode 1)
 
-(require 'ecb-autoloads)
+(setq ecb-layout-name "leftright1")
 
+(add-to-list 'load-path (expand-file-name "~/emacs/pkg/ecb"))
 
+;(require 'ecb-autoloads)
 
+(require 'ecb)
 
 ; (setq debug-on-error t)
 
