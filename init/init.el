@@ -15,6 +15,7 @@
 
 (require 'init-delete-trailing-whitespace)
 
+(require 'init-python)
 ;(require 'init-cedet)
 
 ;(require 'init-tmp)
