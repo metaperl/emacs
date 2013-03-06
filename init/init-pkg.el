@@ -3,6 +3,7 @@
 
 
 (require 'init-ecb)
+(require 'init-powerline)
 
 ;(require 'init-anything)
 (require 'init-helm)
