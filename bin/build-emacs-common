@@ -1,0 +1,13 @@
+#!/bin/bash -x
+
+TMP=~/tmp && mkdir $TMP && cd $TMP
+
+bzr co --lightweight -v bzr://bzr.savannah.gnu.org/emacs/trunk emacs
+
+cd emacs
+./autogen.sh
+./configure --with-x-toolkit=gtk3
+make
+src/emacs 
+
+
