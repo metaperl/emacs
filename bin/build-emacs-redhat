@@ -1,0 +1,11 @@
+#!/bin/bash -x
+
+
+sudo yum -y install  ncurses-devel dbus-devel dbus-python texinfo libselinux-devel 
+sudo yum -y install libpng-devel giflib-devel libtiff-devel libjpeg-devel gtk+-devel gtk2-devel \
+gpm-devel dbus-glib-devel GConf2-devel pkgconfig libXft-devel libXpm-devel
+
+sudo yum -y install  make automake gcc gcc-c++ kernel-devel
+
+./build-emacs-common
+
