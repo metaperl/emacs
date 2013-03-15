@@ -2,7 +2,7 @@
 (add-to-list 'load-path "~/emacs/pkg")
 
 
-(require 'init-ecb)
+;(require 'init-ecb)
 ;(require 'init-powerline)
 
 ;(require 'init-anything)
