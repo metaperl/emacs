@@ -15,7 +15,7 @@
 
 (if-bound-call tool-bar-mode -1)
 (if-bound-call scroll-bar-mode -1)
-(if-bound-call menu-bar-mode -1)
+;(if-bound-call menu-bar-mode -1)
 
 
 (setq visible-bell t)
@@ -40,6 +40,7 @@
 ;;; key sets
 
 
+(global-set-key (kbd "<f8>")   'other-frame)
 (global-set-key (kbd "<f12>")   'goto-line)
 
 (global-set-key (kbd "C-h") 'backward-delete-char)

@@ -2,7 +2,7 @@
 
 (setq wg-file workgroups-data)
 
-(add-to-list 'load-path "~/emacs/pkg/workgroups.el/")
+(add-to-list 'load-path "~/.emacs.d/pkg/workgroups.el/")
 (require 'workgroups)
 
 (workgroups-mode 1)
