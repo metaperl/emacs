@@ -1,0 +1,3 @@
+git clone https://github.com/emacs-helm/helm.git
+git clone https://github.com/nicferrier/emacs-web
+git clone https://github.com/diogofsr/paste-kde.git
