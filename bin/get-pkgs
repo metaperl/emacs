@@ -1,0 +1,5 @@
+cd ../pkg
+
+./build/helm
+./build/emacs-web
+./build/paste-kde

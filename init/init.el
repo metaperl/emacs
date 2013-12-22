@@ -9,12 +9,14 @@
 (setq debug-on-error t)
 (setq stack-trace-on-error t)
 
+(add-to-list 'load-path "~/emacs/")
+(add-to-list 'load-path "~/emacs/init/")
+
+
 (setq grep-find-command (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
 
 ;(server-start)
 
-(add-to-list 'load-path "~/emacs/")
-(add-to-list 'load-path "~/emacs/init/")
 
 (require 'init-delete-trailing-whitespace)
 
