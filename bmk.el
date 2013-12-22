@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("app95a:lib.log"
+(("linode:focustest.freegold.biz"
+ (filename . "/ssh:schemelab@li2-168.members.linode.com:/home/schemelab/domains/biz/freegold/focustest/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "96 Dec  7 06:41 ")
+ (position . 263))
+("app95a:lib.log"
  (filename . "/ssh:root@app95a.boca95-verio.com:/u/autobahn/logs/include/lib.log")
  (front-context-string . "NOTE:  VWH::API:")
  (rear-context-string)

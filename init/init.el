@@ -6,7 +6,10 @@
 ;; http://github.com/technomancy/emacs-starter-kit/blob/master/init.el
 
 
+(setq debug-on-error t)
 (setq stack-trace-on-error t)
+
+(setq grep-find-command (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
 
 ;(server-start)
 

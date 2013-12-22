@@ -18,7 +18,7 @@
 ;(if-bound-call menu-bar-mode -1)
 
 
-(setq visible-bell t)
+(setq visible-bell nil)
 
 (setq-default indent-tabs-mode nil)
 

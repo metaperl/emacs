@@ -1,5 +1,5 @@
-(require 'python)
-
-(add-hook 'python-mode-hook (lambda () (hs-minor-mode 1)))
+(package-initialize)
+(require 'elpy)
+(elpy-enable)
 
 (provide 'init-python)
