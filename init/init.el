@@ -5,13 +5,31 @@
 ;; inspired by technomancy's emacs starter kit
 ;; http://github.com/technomancy/emacs-starter-kit/blob/master/init.el
 
+(setq gc-cons-threshold 20000000)
+
+  (setq stk/onlinep nil)
+  (unless
+      (condition-case nil
+          (delete-process
+           (make-network-process
+            :name "stk/check-internet"
+            :host "elpa.gnu.org"
+            :service 80))
+        (error t))
+    (setq stk/onlinep t))
+
+  (global-auto-revert-mode 1)  ;auto revert buffers when changed on disk
+  (show-paren-mode t)          ;visualize()
+
+  (setq enable-recursive-minibuffers t)
+
 
 (setq debug-on-error t)
-(setq stack-trace-on-error t)
 
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
+(require 'init-pkg)
 
 (setq grep-find-command (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
 
@@ -25,7 +43,7 @@
 
 ;(require 'init-tmp)
 
-;(require 'init-themes)
+(require 'init-themes)
 
 (require 'init-tramp)
 (require 'init-functions)
@@ -36,7 +54,7 @@
 
 (require 'init-standard-packages)
 
-(require 'init-pkg)
+
 
 ;(require 'init-el-get)
 
