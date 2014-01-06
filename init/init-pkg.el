@@ -12,10 +12,12 @@
 (setq package-archives '(
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
+(require 'init-load-packages)
+
 (require 'init-dired)
 (require 'init-flx-ido)
 (require 'init-helm)
 (require 'init-org)
-(require 'init-magit)
+;(require 'init-magit)
 
 (provide 'init-pkg)

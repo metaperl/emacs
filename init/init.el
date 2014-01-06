@@ -40,6 +40,7 @@
 (require 'init-backup-files)
 (require 'init-scrolling)
 (require 'init-settings)
+(require 'init-gg)
 
 ;; "Emacs outshines all other editing software in approximately the
 ;; same way that the noonday sun does the stars. It is not just bigger

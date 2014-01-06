@@ -2,6 +2,7 @@
       '(
         elpy
         flx-ido
+        flymake-cursor
         gist
         grandshell-theme
         helm
@@ -10,7 +11,6 @@
         iedit
         multiple-cursors
         org
-        projectile
         shell-current-directory
         )
       )
