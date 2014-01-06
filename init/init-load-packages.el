@@ -5,15 +5,12 @@
         gist
         grandshell-theme
         helm
-        helm-descbinds
-        helm-c-yasnippet
-        helm-gtags
-        helm-git
-        helm-projectile
         highlight-symbol
         htmlize
         iedit
+        multiple-cursors
         org
+        projectile
         shell-current-directory
         )
       )

@@ -5,58 +5,41 @@
 ;; inspired by technomancy's emacs starter kit
 ;; http://github.com/technomancy/emacs-starter-kit/blob/master/init.el
 
-(setq gc-cons-threshold 20000000)
-
-  (setq stk/onlinep nil)
-  (unless
-      (condition-case nil
-          (delete-process
-           (make-network-process
-            :name "stk/check-internet"
-            :host "elpa.gnu.org"
-            :service 80))
-        (error t))
-    (setq stk/onlinep t))
-
-  (global-auto-revert-mode 1)  ;auto revert buffers when changed on disk
-  (show-paren-mode t)          ;visualize()
-
-  (setq enable-recursive-minibuffers t)
-
-
 (setq debug-on-error t)
+(setq gc-cons-threshold 20000000)
+(setq grep-find-command
+      (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
+
+(setq stk/onlinep nil)
+(unless
+    (condition-case nil
+        (delete-process
+         (make-network-process
+          :name "stk/check-internet"
+          :host "elpa.gnu.org"
+          :service 80))
+      (error t))
+  (setq stk/onlinep t))
+
+(global-auto-revert-mode 1)
+(show-paren-mode t)
+
+(setq enable-recursive-minibuffers t)
 
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
+(require 'init-standard-packages)
 (require 'init-pkg)
-
-(setq grep-find-command (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
-
-;(server-start)
-
-
 (require 'init-delete-trailing-whitespace)
-
 (require 'init-python)
-;(require 'init-cedet)
-
-;(require 'init-tmp)
-
+(require 'init-js2)
 (require 'init-themes)
-
 (require 'init-tramp)
 (require 'init-functions)
 (require 'init-backup-files)
-
 (require 'init-scrolling)
 (require 'init-settings)
-
-(require 'init-standard-packages)
-
-
-
-;(require 'init-el-get)
 
 ;; "Emacs outshines all other editing software in approximately the
 ;; same way that the noonday sun does the stars. It is not just bigger
