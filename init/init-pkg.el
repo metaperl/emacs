@@ -14,6 +14,7 @@
 
 (require 'init-dired)
 (require 'init-flx-ido)
+(require 'init-prodigy)
 (require 'init-helm)
 (require 'init-org)
 (require 'init-magit)

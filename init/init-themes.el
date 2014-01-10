@@ -1,6 +1,6 @@
 
 (add-to-list 'custom-theme-load-path "~/emacs/themes")
 
-(load-theme 'grandshell)
+; (load-theme 'grandshell)
 
 (provide 'init-themes)

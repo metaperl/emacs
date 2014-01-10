@@ -33,6 +33,7 @@
 (require 'init-pkg)
 (require 'init-delete-trailing-whitespace)
 (require 'init-python)
+(require 'init-scala)
 (require 'init-js2)
 (require 'init-themes)
 (require 'init-tramp)
