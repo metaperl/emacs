@@ -17,6 +17,6 @@
 (require 'init-prodigy)
 (require 'init-helm)
 (require 'init-org)
-(require 'init-magit)
+; (require 'init-magit)
 
 (provide 'init-pkg)

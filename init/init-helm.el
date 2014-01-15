@@ -1,4 +1,4 @@
-
+(setq helm-completion-window-scroll-margin 5)
 (require 'helm)
 (require 'helm-config)
 
