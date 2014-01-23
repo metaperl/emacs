@@ -23,18 +23,22 @@
 
 (require 'init-delete-trailing-whitespace)
 
-;(require 'init-auto-complete)
+; AFTERWARDS (require 'init-auto-complete)
 
-;(require 'init-python)
-;(require 'init-scala)
-;(require 'init-js2)
+; AFTERWARDS (require 'init-python)
+; AFTERWARDS (require 'init-scala)
+; AFTERWARDS (require 'init-js2)
 (require 'init-themes)
-;(require 'init-tramp)
+; AFTERWARDS (require 'init-tramp)
 (require 'init-functions)
 (require 'init-backup-files)
 (require 'init-scrolling)
 (require 'init-settings)
-;(require 'init-gg)
+; AFTERWARDS (require 'init-gg)
+
+(defun init-afterwards()
+  (interactive)
+  (require 'init-afterwards))
 
 ;; "Emacs outshines all other editing software in approximately the
 ;; same way that the noonday sun does the stars. It is not just bigger
