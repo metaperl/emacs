@@ -1,0 +1,3 @@
+cd ~/.emacs.d
+rm -rf *
+rm ~/.emacs.el

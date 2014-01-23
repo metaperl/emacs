@@ -20,9 +20,11 @@
 
 (require 'init-standard-packages)
 (require 'init-custom-packages)
+
 (require 'init-delete-trailing-whitespace)
+(require 'auto-complete)
 (require 'init-python)
-(require 'init-scala)
+;(require 'init-scala)
 (require 'init-js2)
 (require 'init-themes)
 (require 'init-tramp)

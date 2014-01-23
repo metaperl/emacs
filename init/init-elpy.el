@@ -1,6 +1,6 @@
 
 
-;(require 'elpy)
-;(elpy-enable)
+(require 'elpy)
+(elpy-enable)
 
 (provide 'init-elpy)
