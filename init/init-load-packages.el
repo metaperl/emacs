@@ -1,3 +1,13 @@
+(require 'package)
+
+
+; (setq package-archives
+;       (list
+;        '("melpa" . "http://melpa.milkbox.net/packages/")
+;         ("marmalade" . "http://marmalade-repo.org/packages/")
+;         ("gnu" . "http://elpa.gnu.org/packages/")
+
+
 (setq my-packages
       '(
         elpy
@@ -11,6 +21,7 @@
         iedit
         multiple-cursors
         org
+	prodigy
         shell-current-directory
         )
       )
@@ -21,7 +32,7 @@
         (delete-process
          (make-network-process
           :name "stk/check-internet"
-          :host "elpa.gnu.org"
+          :host "melpa.milkbox.net"
           :service 80))
       (error t))
   (setq stk/onlinep t))

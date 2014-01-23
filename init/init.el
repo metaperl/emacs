@@ -19,7 +19,7 @@
 (add-to-list 'load-path "~/emacs/init/")
 
 (require 'init-standard-packages)
-(require 'init-pkg)
+(require 'init-custom-packages)
 (require 'init-delete-trailing-whitespace)
 (require 'init-python)
 (require 'init-scala)
