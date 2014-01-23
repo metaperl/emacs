@@ -14,10 +14,11 @@
 
 (require 'init-load-packages)
 
-(require 'init-dired)
+
+(require 'init-helm)
 (require 'init-flx-ido)
 (require 'init-prodigy)
-(require 'init-helm)
+
 (require 'init-org)
 
 (provide 'init-pkg)

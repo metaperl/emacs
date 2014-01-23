@@ -15,6 +15,17 @@
         )
       )
 
+(setq stk/onlinep nil)
+(unless
+    (condition-case nil
+        (delete-process
+         (make-network-process
+          :name "stk/check-internet"
+          :host "elpa.gnu.org"
+          :service 80))
+      (error t))
+  (setq stk/onlinep t))
+
 (when stk/onlinep
   (package-refresh-contents)
   (cl-loop for p in my-packages

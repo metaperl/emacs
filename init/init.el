@@ -10,17 +10,6 @@
 (setq grep-find-command
       (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
 
-(setq stk/onlinep nil)
-(unless
-    (condition-case nil
-        (delete-process
-         (make-network-process
-          :name "stk/check-internet"
-          :host "elpa.gnu.org"
-          :service 80))
-      (error t))
-  (setq stk/onlinep t))
-
 (global-auto-revert-mode 1)
 (show-paren-mode t)
 
