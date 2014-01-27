@@ -10,6 +10,7 @@
 ;(require 'init-load-packages)
 
 (require 'init-helm)
+(require 'init-smex)
 (require 'init-flx-ido)
 (require 'init-prodigy)
 

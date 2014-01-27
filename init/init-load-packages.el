@@ -23,6 +23,7 @@
         org
 	prodigy
         shell-current-directory
+        smex
         )
       )
 
