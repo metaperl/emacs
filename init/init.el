@@ -31,9 +31,10 @@
 (require 'init-themes)
 ; AFTERWARDS (require 'init-tramp)
 (require 'init-functions)
+(require 'init-settings)
 (require 'init-backup-files)
 (require 'init-scrolling)
-(require 'init-settings)
+
 ; AFTERWARDS (require 'init-gg)
 
 (defun init-afterwards()
