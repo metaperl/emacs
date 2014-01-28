@@ -5,5 +5,6 @@
 ;; disable ido faces to see flx highlights.
 (setq ido-use-faces nil)
 
+(global-set-key (kbd "C-x d") 'ido-dired)
 
 (provide 'init-flx-ido)
