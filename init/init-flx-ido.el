@@ -6,5 +6,6 @@
 (setq ido-use-faces nil)
 
 (global-set-key (kbd "C-x d") 'ido-dired)
+(global-set-key (kbd "C-x C-f") 'ido-find-file)
 
 (provide 'init-flx-ido)
