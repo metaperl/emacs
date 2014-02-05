@@ -1,7 +1,9 @@
 
                                         ; courier new
-                                        ;  dejavu sans semi-condensed
                                         ; LMMono Cond10 Light
-; WeiYuanmicroHei
+                                        ; FreeMono
+                                        ; WeiYuanmicroHei
+                                        ; Libertarian Mono
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;123445679;123445679;123445679;123445679;123445679;123445679;123445679;123445679
