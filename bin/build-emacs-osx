@@ -1,0 +1,3 @@
+#brew install emacs --HEAD --cocoa --use-git-head
+brew install emacs --cocoa
+brew link emacs
