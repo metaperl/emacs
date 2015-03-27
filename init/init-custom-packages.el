@@ -1,20 +1,31 @@
+(load "package")
+(package-initialize)
 
-(add-to-list 'load-path "~/emacs/pkg")
+;(add-to-list 'load-path "~/emacs/pkg")
 
 
 (setq package-archives '(
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+                         ("melpa" . "http://melpa.org/packages/")))
 
-(package-initialize)
 
+(require 'init-helm)
+(require 'init-smex)
+(require 'init-flx-ido)
+(require 'init-org)
+
+;(require 'init-autopair)
 ;(require 'init-load-packages)
-
 ;(require 'init-shell)
-;(require 'init-helm)
-;(require 'init-smex)
-;(require 'init-flx-ido)
 ;(require 'init-prodigy)
 
-(require 'init-org)
+
+
+
+
+
+
+
+
+
 
 (provide 'init-custom-packages)

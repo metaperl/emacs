@@ -15,6 +15,7 @@
 
 (setq enable-recursive-minibuffers t)
 
+
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
 
@@ -23,20 +24,16 @@
 
 (require 'init-delete-trailing-whitespace)
 
-; AFTERWARDS (require 'init-auto-complete)
 
-; AFTERWARDS (require 'init-python)
-; AFTERWARDS (require 'init-scala)
-; AFTERWARDS (require 'init-js2)
 (require 'init-themes)
-; AFTERWARDS (require 'init-tramp)
 (require 'init-functions)
 (require 'init-settings)
 (require 'init-backup-files)
 (require 'init-scrolling)
 
-; AFTERWARDS (require 'init-gg)
+(require 'init-elm)
 
+(require 'init-afterwards)
 (defun init-afterwards()
   (interactive)
   (require 'init-afterwards))

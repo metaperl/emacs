@@ -2,7 +2,14 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("linode:focustest.freegold.biz"
+(("old-linode"
+ (filename .
+           #("/scp:schemelab@173.255.198.167:/home/schemelab/" 1 4
+             (tramp-default t)))
+ (front-context-string . "2013-03-19_21-51")
+ (rear-context-string . "20 Mar 20  2013 ")
+ (position . 236))
+("linode:focustest.freegold.biz"
  (filename . "/ssh:schemelab@li2-168.members.linode.com:/home/schemelab/domains/biz/freegold/focustest/")
  (front-context-string . ".git\n  -rw-r--r-")
  (rear-context-string . "96 Dec  7 06:41 ")

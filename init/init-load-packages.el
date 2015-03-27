@@ -14,7 +14,6 @@
         flx-ido
         flymake-cursor
         gist
-        grandshell-theme
         helm
         highlight-symbol
         htmlize
@@ -33,7 +32,7 @@
         (delete-process
          (make-network-process
           :name "stk/check-internet"
-          :host "melpa.milkbox.net"
+          :host "melpa.org"
           :service 80))
       (error t))
   (setq stk/onlinep t))
