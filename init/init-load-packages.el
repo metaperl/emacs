@@ -23,6 +23,7 @@
 	prodigy
         shell-current-directory
         smex
+
         )
       )
 

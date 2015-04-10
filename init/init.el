@@ -24,14 +24,13 @@
 
 (require 'init-delete-trailing-whitespace)
 
-
 (require 'init-themes)
 (require 'init-functions)
 (require 'init-settings)
 (require 'init-backup-files)
 (require 'init-scrolling)
 
-(require 'init-elm)
+;(require 'init-elm)
 
 (require 'init-afterwards)
 (defun init-afterwards()
