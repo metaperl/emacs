@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("old-linode"
+(("polaris-stg-app1"
+ (filename . "/ssh:tebranno@polaris-stg-app1:/home/tebranno/")
+ (front-context-string)
+ (rear-context-string . "96 Apr  9 13:56 ")
+ (position . 851))
+("old-linode"
  (filename .
            #("/scp:schemelab@173.255.198.167:/home/schemelab/" 1 4
              (tramp-default t)))
