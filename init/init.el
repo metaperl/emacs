@@ -21,6 +21,7 @@
 
 (require 'init-standard-packages)
 (require 'init-custom-packages)
+(require 'init-personal-packages)
 
 (require 'init-delete-trailing-whitespace)
 
