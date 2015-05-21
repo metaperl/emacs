@@ -14,6 +14,15 @@
 
 (if (eq window-system 'x) (setq x-select-enable-clipboard t))
 
+
+(defun MakeThreeWindows ()
+  (interactive)
+  (delete-other-windows)
+  (split-window-horizontally)
+  (split-window-horizontally)
+  (balance-windows)
+)
+
 ;;; http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/01b7d4153acf6336#
 (defun MakeSixWindows ()
   (interactive)

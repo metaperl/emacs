@@ -1,4 +1,4 @@
-(require 'package)
+(require 'init-package)
 
 
 ; (setq package-archives
@@ -7,9 +7,12 @@
 ;         ("marmalade" . "http://marmalade-repo.org/packages/")
 ;         ("gnu" . "http://elpa.gnu.org/packages/")
 
+(require 'cl)
+
 
 (setq my-packages
       '(
+        auto-complete
         elpy
         flx-ido
         flymake-cursor
