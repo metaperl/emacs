@@ -4,6 +4,7 @@
 
 ; (helm-mode 1)
 
+(add-hook 'helm-after-initialize-hook (lambda () (with-helm-buffer (visual-line-mode))))
 
 (global-set-key (kbd "C-x b") 'helm-mini)
 
