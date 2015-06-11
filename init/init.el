@@ -18,10 +18,13 @@
 
 (add-to-list 'load-path "~/emacs/")
 (add-to-list 'load-path "~/emacs/init/")
+(add-to-list 'load-path "~/emacs/init/programming")
 
 (require 'init-standard-packages)
 (require 'init-custom-packages)
 (require 'init-personal-packages)
+
+(require 'init-programming)
 
 (require 'init-delete-trailing-whitespace)
 
