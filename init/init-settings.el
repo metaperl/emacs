@@ -24,6 +24,8 @@
 (global-set-key (kbd "<f8>")   'other-frame)
 (global-set-key (kbd "<f12>")   'goto-line)
 
+(global-set-key (kbd "C-`") 'set-mark-command)
+
 (global-set-key (kbd "C-h") 'backward-delete-char)
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 (global-set-key (kbd "C-x 0") 'other-window)
