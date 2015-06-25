@@ -17,6 +17,6 @@
   (mapcar #'disable-theme custom-enabled-themes)
   (load-theme theme t))
 
-; (load-theme 'grandshell)
+(tao-theme)
 
 (provide 'init-themes)
