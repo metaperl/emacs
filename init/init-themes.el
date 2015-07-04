@@ -17,6 +17,7 @@
   (mapcar #'disable-theme custom-enabled-themes)
   (load-theme theme t))
 
-(tao-theme)
+;(lightblue-theme)
+;(require 'professional-theme)
 
 (provide 'init-themes)
