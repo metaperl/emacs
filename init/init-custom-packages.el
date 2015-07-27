@@ -3,10 +3,15 @@
 
 ;(add-to-list 'load-path "~/emacs/pkg")
 
-
 (setq package-archives '(
                          ("melpa" . "http://melpa.org/packages/")))
 
+(if (not (package-installed-p 'use-package))
+    (progn
+      (package-refresh-contents)
+      (package-install 'use-package)))
+
+(require 'use-package)
 
 (require 'init-helm)
 (require 'init-smex)
