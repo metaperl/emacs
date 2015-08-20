@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("nagare-in-site-packages"
+(("CloudAv_Reporting_Team_Jbehave_Golden_Data"
+ (filename . "/cygdrive/c/p4ws/agiledhf_dev_nextgen/AgileDHF/data/CloudAv/CloudAv_Reporting_Team_Jbehave_Golden_Data/")
+ (front-context-string)
+ (rear-context-string . "te_requirements\n")
+ (position . 1083))
+("nagare-in-site-packages"
  (filename . "/ssh:tebranno@polaris-stg-app1:/home/tebranno/install/nagare-home/lib/python2.7/site-packages/nagare-0.4.1.post467-py2.7.egg/nagare/")
  (front-context-string . "__init__.py\n  -r")
  (rear-context-string . "71 Apr 28 09:48 ")
