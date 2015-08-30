@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("nagare-in-site-packages"
+(("linode:cashbackmimi"
+ (filename . "/ssh:schemelab@li2-168.members.linode.com:/home/schemelab/domains/com/cashbackmiami/")
+ (front-context-string . ".access.log\n  -r")
+ (rear-context-string . "07 Jul 22 16:23 ")
+ (position . 266))
+("nagare-in-site-packages"
  (filename . "/ssh:tebranno@polaris-stg-app1:/home/tebranno/install/nagare-home/lib/python2.7/site-packages/nagare-0.4.1.post467-py2.7.egg/nagare/")
  (front-context-string . "__init__.py\n  -r")
  (rear-context-string . "71 Apr 28 09:48 ")

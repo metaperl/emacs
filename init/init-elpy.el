@@ -1,4 +1,6 @@
 
+(setq elpy-rpc-backend "jedi")
+
 
 (require 'elpy)
 (elpy-enable)
