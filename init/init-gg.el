@@ -42,7 +42,7 @@
   (interactive)
   (shell-command "g4 diff"))
 
-(require 'flymake-cursor)
+(use-package flymake-cursor :ensure flymake-cursor)
 
 (defun hu-tests(search replace)
   (let

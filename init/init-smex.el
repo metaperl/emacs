@@ -1,5 +1,6 @@
 
-(require 'smex) ; Not needed if you use package.el
+(use-package smex :ensure smex) ; Not needed if you use package.el
+;(require-or-install 'smex) ; Not needed if you use package.el
 (smex-initialize) ; Can be omitted. This might cause a (minimal) delay
                   ; when Smex is auto-initialized on its first run.
 

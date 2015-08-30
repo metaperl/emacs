@@ -1,4 +1,4 @@
-(require 'elm-mode)
+(use-package 'elm-mode :ensure elm-mode)
 
 
 (provide 'init-elm)

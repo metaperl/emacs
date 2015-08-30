@@ -1,4 +1,4 @@
-(require 'auto-complete)
+(use-package auto-complete :ensure auto-complete)
 (global-auto-complete-mode t)
 
 ;(add-to-list 'load-path "~/.emacs.d")

@@ -41,7 +41,15 @@
 
 ;(require 'init-elm)
 
-(require 'init-afterwards)
+(require 'init-keys)
+
+(require 'init-auto-complete)
+(require 'init-python)
+(require 'init-tramp)
+(require 'init-gg)
+
+;(require 'init-afterwards)
+
 (defun init-afterwards()
   (interactive)
   (require 'init-afterwards))

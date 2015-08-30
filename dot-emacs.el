@@ -1,3 +1,5 @@
+(setq debug-on-error t)
+(setq stack-trace-on-error t)
 (load "~/emacs/init/init.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
