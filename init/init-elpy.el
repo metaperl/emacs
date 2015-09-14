@@ -19,4 +19,14 @@
   (package-refresh-contents)
   (package-install 'elpy))
 
+(defun my-python-mode-action ()
+  (interactive)
+  (make-local-variable 'before-save-hook)
+  (add-hook 'before-save-hook (lambda ()
+                                (save-restriction
+                                  (widen)
+                                  (untabify (point-min) (point-max))))))
+
+(add-hook 'python-mode-hook 'my-python-mode-action)
+
 (provide 'init-elpy)
