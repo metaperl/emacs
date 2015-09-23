@@ -10,6 +10,11 @@
 (setq grep-find-command
       (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
 
+;(global-hl-line-mode nil)
+
+;; (require 'tabbar)
+;; (tabbar-mode)
+
 (global-auto-revert-mode 1)
 (show-paren-mode t)
 
