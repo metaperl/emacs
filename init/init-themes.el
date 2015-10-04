@@ -17,7 +17,7 @@
   (mapcar #'disable-theme custom-enabled-themes)
   (load-theme theme t))
 
-(load-theme 'organic-green)
+;(load-theme 'organic-green)
 
 ;(lightblue-theme)
 ;(require 'professional-theme)
