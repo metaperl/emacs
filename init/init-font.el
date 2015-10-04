@@ -1,9 +1,6 @@
+(setq my-font "PT Mono")
 
-                                        ; courier new
-                                        ; LMMono Cond10 Light
-                                        ; FreeMono
-                                        ; WeiYuanmicroHei
-                                        ; Libertarian Mono
+(set-frame-font my-font)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;123445679;123445679;123445679;123445679;123445679;123445679;123445679;123445679
+(add-to-list 'initial-frame-alist '(font . my-font))
+(add-to-list 'default-frame-alist '(font . my-font))
