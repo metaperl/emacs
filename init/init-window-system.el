@@ -1,4 +1,4 @@
-(when window-system
+(when (display-graphic-p)
   (eval-after-load "menu-bar" '(require 'menu-bar+))
 ;  (load-library "color-theme")
  ; (color-theme-initialize)
@@ -7,6 +7,7 @@
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
   (mouse-wheel-mode 1)
+  (require 'init-font)
 )
 
 (setq scroll-step           1
