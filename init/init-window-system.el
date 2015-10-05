@@ -7,7 +7,7 @@
   (tool-bar-mode 0)
   (scroll-bar-mode -1)
   (mouse-wheel-mode 1)
-  (require 'init-font)
+;  (require 'init-font)
 )
 
 (setq scroll-step           1
