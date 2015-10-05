@@ -2,6 +2,7 @@
 (setq my-font-family-mac "Courier New")
 (setq my-font-family-mac "PT Mono")
 (setq my-font-family-win "Consolas")
+(setq my-font-family-cygwin "Lucida Sans Typewriter")
 
 
 
@@ -15,6 +16,10 @@
   (when (member "DejaVu Sans Mono" (font-family-list))
     (add-to-list 'initial-frame-alist (list 'font my-font-win)
     (add-to-list 'default-frame-alist (list 'font my-font-win)))))
+ ((string-equal system-type "cygwin") ;
+  (when (member my-font-family-cygwin (font-family-list))
+    (add-to-list 'initial-frame-alist (list 'font my-font-family-cygwin)
+    (add-to-list 'default-frame-alist (list 'font my-font-family-cygwin)))))
  ((string-equal system-type "darwin") ; Mac OS X
     (add-to-list 'initial-frame-alist (list 'font my-font-mac)
     (add-to-list 'default-frame-alist (list 'font my-font-mac))))
