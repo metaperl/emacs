@@ -1,3 +1,5 @@
+; https://www.reddit.com/r/emacs/comments/3ngatv/setting_the_default_font_for_a_frame/
+
 (setq my-font-size "14")
 (setq my-font-family-mac "Courier New")
 (setq my-font-family-mac "PT Mono")
