@@ -13,10 +13,8 @@
 (add-hook 'latex-mode-hook 'turn-on-auto-fill t)
 (setq latex-run-command "pdflatex")
 
-;; bookmark
+(require 'init-bookmark)
 
-(setq-default bookmark-default-file "~/emacs/bmk.el")
-(setq-default bookmark-save-flag 1)
 
 ;; ffap
 
