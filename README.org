@@ -1,2 +1,0 @@
-* Here's how it all works
-** [[~/.emacs.el]] loads [[file:init/init.el::init%20el%20Where%20all%20the%20magic%20begins][init.el]]

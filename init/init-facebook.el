@@ -3,7 +3,7 @@
 (defun init-facebook()
   (interactive)
   (text-mode)
-  (set-fill-column 52))
+  (set-fill-column 50))
 
 (add-to-list 'auto-mode-alist '("\\.fb\\'" . init-facebook))
 
