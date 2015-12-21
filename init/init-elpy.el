@@ -2,7 +2,7 @@
 (setq elpy-rpc-backend "jedi")
 
 
-(require 'elpy)
+(use-package elpy :ensure)
 (elpy-enable)
 
 (add-hook 'python-mode-hook

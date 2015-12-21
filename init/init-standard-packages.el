@@ -1,6 +1,6 @@
 
 (require 'init-uniquify)
-(require 'init-shell)
+
 (require 'init-dired)
 (require 'init-gnus)
 ;(require 'init-desktop)
