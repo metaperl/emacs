@@ -1,5 +1,5 @@
-(when (display-graphic-p)
-  (eval-after-load "menu-bar" '(require 'menu-bar+))
+ (when (display-graphic-p)
+   ; (eval-after-load "menu-bar" '(require 'menu-bar+))
 ;  (load-library "color-theme")
  ; (color-theme-initialize)
 ;  (require 'color-theme-random)

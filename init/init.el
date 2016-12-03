@@ -45,9 +45,17 @@
 (require 'init-keys)
 
 (require 'init-auto-complete)
-(require 'init-python)
+
 (require 'init-tramp)
 (require 'init-gg)
+
+;;; Programming Languages
+
+;; Python
+(require 'init-python)
+
+;; Clojure
+(require 'init-clojure)
 
 ;(require 'init-afterwards)
 
