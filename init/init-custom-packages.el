@@ -1,10 +1,8 @@
 (load "package")
-(package-initialize)
-
+;(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 ;(add-to-list 'load-path "~/emacs/pkg")
-
-(setq package-archives '(
-                         ("melpa" . "http://melpa.org/packages/")))
+(package-initialize)
 
 (if (not (package-installed-p 'use-package))
     (progn
