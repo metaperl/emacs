@@ -29,7 +29,7 @@
 (require 'init-custom-packages)
 (require 'init-personal-packages)
 
-(require 'init-programming)
+
 
 (require 'init-delete-trailing-whitespace)
 
@@ -49,12 +49,13 @@
 (require 'init-gg)
 
 ;;; Programming Languages
+;(require 'init-programming)
 
 ;; Python
-(require 'init-python)
+;(require 'init-python)
 
 ;; Clojure
-(require 'init-clojure)
+;(require 'init-clojure)
 
 ;(require 'init-afterwards)
 
