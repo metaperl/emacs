@@ -21,9 +21,10 @@
 (setq enable-recursive-minibuffers t)
 
 
-(add-to-list 'load-path "~/emacs/")
-(add-to-list 'load-path "~/emacs/init/")
-(add-to-list 'load-path "~/emacs/init/programming")
+
+(add-to-list 'load-path (concat emacs-base "/"))
+(add-to-list 'load-path (concat emacs-base "/init/"))
+(add-to-list 'load-path (concat emacs-base "/init/programming"))
 
 (require 'init-standard-packages)
 (require 'init-custom-packages)

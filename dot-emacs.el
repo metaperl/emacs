@@ -1,6 +1,8 @@
 (setq debug-on-error t)
 (setq stack-trace-on-error t)
-(load "~/emacs/init/init.el")
+
+(setq emacs-base "c:/Users/supreme/Dropbox/Emacs/")
+(load (concat emacs-base "init/init.el"))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
