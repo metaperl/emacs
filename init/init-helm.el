@@ -13,4 +13,7 @@
 
 (global-set-key (kbd "C-x b") 'helm-mini)
 
+(setq helm-buffers-fuzzy-matching t
+      helm-recentf-fuzzy-match    t)
+
 (provide 'init-helm)
