@@ -49,14 +49,7 @@
 (require 'init-tramp)
 (require 'init-gg)
 
-;;; Programming Languages
-;(require 'init-programming)
-
-;; Python
-;(require 'init-python)
-
-;; Clojure
-;(require 'init-clojure)
+(require 'init-programming)
 
 ;(require 'init-afterwards)
 
