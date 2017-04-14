@@ -1,0 +1,19 @@
+sudo apt-get install -y git-core libxaw7-dev libxpm-dev
+sudo apt-get install libpng12-dev libtiff5-dev libgif-dev
+sudo apt-get install libjpeg62-turbo-dev libgtk2.0-dev
+sudo apt-get install libncurses5-dev autoconf automake
+sudo apt-get install gnutls-dev
+
+sudo apt-get build-dep emacs
+
+git clone --depth 1 -b master git://git.sv.gnu.org/emacs.git
+
+cd emacs
+
+./autogen.sh
+
+./configure --prefix=/home/schemelab/install/emacs
+
+make
+
+sudo make install
