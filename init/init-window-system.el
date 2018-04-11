@@ -37,6 +37,19 @@
   (balance-windows)
 )
 
+(defun MakeFourWindows ()
+  (interactive)
+  (delete-other-windows)
+  (split-window-horizontally)
+  (split-window-vertically)
+
+
+
+  (other-window 2)
+  (split-window-vertically)
+  (balance-windows)
+)
+
 (global-set-key (kbd "C-x 6") 'MakeSixWindows)
 
 (provide 'init-window-system)
