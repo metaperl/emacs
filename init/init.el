@@ -5,6 +5,9 @@
 ;; inspired by technomancy's emacs starter kit
 ;; http://github.com/technomancy/emacs-starter-kit/blob/master/init.el
 
+(require 'desktop)
+(desktop-save-mode 1)
+
 (setq debug-on-error t)
 (setq gc-cons-threshold 20000000)
 (setq grep-find-command

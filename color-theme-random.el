@@ -1,25 +1,27 @@
-(require 'color-theme)
+;(require 'color-theme)
+(require 'custom)
 
 (random t)
+
+; get themes by running (custom-available-themes)
 
 (setq *color-theme-favorites*
   '(
 
-    arjen andreas billw blippblopp blue-mood blue-sea calm-forest
-    classic comidia dark-blue dark-blue2 deep-blue
-    euphoria feng-shui fischmeister goldenrod gray1 gray30
-    high-contrast hober infodoc jb-simple jonadabian
-    jsc-dark jsc-light
-kingsajz
-    late-night lawrence lethe
-    marine marquardt midnight mistyday montz parus
-    robin-hood simple-1 subtle-blue tty-dark
-    word-perfect
-    xp
+abyss afternoon ahungry alect-black-alt alect-black alect-dark-alt alect-dark alect-light-alt alect-light atom-dark birds-of-paradise-plus blackboard borland-blue boron busybee chyla material-light material monokai zweilight adwaita deeper-blue dichromacy leuven light-blue manoj-dark misterioso tango-dark tango tsdh-dark tsdh-light wheatgrass whiteboard wombat
 
-    ))
+    )
+  )
 
 (defun color-theme-random()
+     (interactive)
+
+     (let* ((choice (nth (random (length *color-theme-favorites*))
+			 *color-theme-favorites*)))
+       (load-theme choice t)))
+
+
+(defun color-theme-random-failing()
      (interactive)
 
 
@@ -28,6 +30,9 @@ kingsajz
 			 *color-theme-favorites*))
 	    (fn (intern (format "color-theme-%s" choice))))
        (funcall fn)))
+
+
+
 
 ; http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/2478d4f521d6ab82#0b238aa68c583a20
 
