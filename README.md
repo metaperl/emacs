@@ -1,10 +1,15 @@
-# emacs
-my emacs stuff
+# Emacs
+My emacs stuff. Modified from
+[Technomancy's Emacs Starter Kit](https://github.com/technomancy/emacs-starter-kit).
 
-# INSTALL
+# Install
 
     shell> git clone git@github.com:metaperl/emacs.git
-    shell> cd emacs ; cp dot-emacs.el ~/.emacs.el
-    shell> cd /mingw64/bin/emacs; ./emacs
-    
-    
+    shell> cd emacs
+    shell> cp dot-emacs.el ~/.emacs.el
+    shell> cd /mingw64/bin/emacs
+    shell> ./emacs
+
+# References
+
+* http://www.gnu.org/software/emacs/manual/html_node/emacs/Init-File.html
