@@ -13,3 +13,7 @@ My emacs stuff. Modified from
 # References
 
 * http://www.gnu.org/software/emacs/manual/html_node/emacs/Init-File.html
+
+# Acknowledgements
+
+Was based on Technomancy's Emacs-Starter-Kit but [he no longer provides it](https://github.com/technomancy/emacs-starter-kit).
