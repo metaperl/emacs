@@ -1,2 +1,3 @@
 * Links
 ** [[What are your favorite themes and fonts?][https://www.reddit.com/r/emacs/comments/3760hh/themes_and_fonts/]]
+** https://www.reddit.com/r/emacs/comments/a1mzje/how_can_one_make_emacs_visually_look_like_sublime/ears14g/
