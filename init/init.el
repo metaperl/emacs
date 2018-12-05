@@ -6,7 +6,30 @@
 ;; http://github.com/technomancy/emacs-starter-kit/blob/master/init.el
 
 (require 'desktop)
-(desktop-save-mode 1)
+(desktop-save-mode)
+
+
+(setq debug-on-error t)
+(setq gc-cons-threshold 20000000)
+(setq grep-find-command
+      (quote ("find . -type f -exec grep -nHi -e   {} \\;" . 34)))
+
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+
+
+
 
 (setq debug-on-error t)
 (setq gc-cons-threshold 20000000)
@@ -68,6 +91,8 @@
 (require 'init-hacks)
 
 (require 'init-baduk)
+
+(helm-mini)
 
 ;; "Emacs outshines all other editing software in approximately the
 ;; same way that the noonday sun does the stars. It is not just bigger
