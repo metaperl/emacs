@@ -50,6 +50,7 @@
 
 
 (add-to-list 'load-path (concat emacs-base "/"))
+(add-to-list 'load-path (concat emacs-base "/misc/"))
 (add-to-list 'load-path (concat emacs-base "/init/"))
 (add-to-list 'load-path (concat emacs-base "/init/programming/"))
 (add-to-list 'load-path dropbox-programming)
@@ -92,7 +93,9 @@
 
 (require 'init-baduk)
 
-(helm-mini)
+                                        ; (helm-mini)
+
+(require 'random-color-theme)
 
 ;; "Emacs outshines all other editing software in approximately the
 ;; same way that the noonday sun does the stars. It is not just bigger

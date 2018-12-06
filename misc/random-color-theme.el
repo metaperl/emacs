@@ -1,7 +1,7 @@
 ; custom-available-themes
 
 (setq color-themes (custom-available-themes))
-(setq rct-interval 1) ; minutes between rand selection
+(setq rct-interval 45) ; minutes between rand selection
 
 (defun random-color-theme ()
   (interactive)
@@ -14,3 +14,5 @@
 (random-color-theme)
 
 (run-with-timer 1 (* rct-interval 60) 'random-color-theme)
+
+(provide 'random-color-theme)
