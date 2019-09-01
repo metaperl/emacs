@@ -7,7 +7,8 @@
 
 (add-to-list 'auto-mode-alist '("\\.fb\\'" . init-facebook))
 
-(setq facebook-dir "~/tmp/facebook")
+;(setq facebook-dir "~/tmp/facebook")
+(setq facebook-dir "/cygdrive/c/Users/terre/Google Drive/Z - Et Cetera")
 
 (defun facebook-message(file-name)
   (interactive "sName of Facebook Message: ")
