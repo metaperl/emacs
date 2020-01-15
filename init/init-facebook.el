@@ -13,7 +13,8 @@
 (defun facebook-message(file-name)
   (interactive "sName of Facebook Message: ")
   (let (
-        (facebook-file-name (format "%s/%s.fb" facebook-dir file-name)))
+        (facebook-file-name (format "%s/%s.fb" facebook-dir file-name))
+        )
     (find-file facebook-file-name)))
 
 (provide 'init-facebook)
