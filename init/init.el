@@ -49,14 +49,15 @@
 
 (setq enable-recursive-minibuffers t)
 
-(setq dropbox-programming "c:/Users/supreme/Dropbox/Programming/")
+(setq emacs-base (expand-file-name "~/emacs/"))
+
 
 
 (add-to-list 'load-path (concat emacs-base "/"))
 (add-to-list 'load-path (concat emacs-base "/misc/"))
 (add-to-list 'load-path (concat emacs-base "/init/"))
 (add-to-list 'load-path (concat emacs-base "/init/programming/"))
-(add-to-list 'load-path dropbox-programming)
+
 
 
 (require 'init-standard-packages)

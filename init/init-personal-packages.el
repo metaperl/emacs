@@ -1,4 +1,3 @@
-(require 'init-facebook)
 
 (require 'init-quick-message)
 
