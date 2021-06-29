@@ -1,7 +1,7 @@
 ;;; Programming Languages
 
 
-(require 'init-rust)
+;(require 'init-rust)
 
 ;; Python
 ;(require 'init-python)

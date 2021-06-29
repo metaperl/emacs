@@ -3,10 +3,10 @@
 
 (require 'init-dired)
 (require 'init-gnus)
-;(require 'init-desktop)
+(require 'init-desktop)
 
 
-(defalias 'perl-mode 'cperl-mode)
+
 (add-hook 'text-mode-hook 'turn-on-auto-fill t)
 
 ;; latex
