@@ -9,6 +9,9 @@
 (setq debug-on-error t)
 (setq stack-trace-on-error t)
 
+(add-to-list 'load-path (expand-file-name "c:/code/emacs"))
+(add-to-list 'load-path (expand-file-name "c:/code/emacs/init"))
+
 (add-to-list 'load-path (expand-file-name "~/emacs"))
 (add-to-list 'load-path (expand-file-name "~/emacs/init"))
 
