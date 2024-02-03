@@ -11,24 +11,16 @@
 
 (require 'use-package)
 
-(require 'init-helm)
-(require 'init-smex)
-(require 'init-flx-ido)
-(require 'init-org)
+					; (require 'init-helm)
+
+; (require 'init-smex)
+; (require 'init-flx-ido)
+; (require 'init-org)
 
 ;(require 'init-autopair)
 ;(require 'init-load-packages)
 ;(require 'init-shell)
 ;(require 'init-prodigy)
-
-
-
-
-
-
-
-
-
 
 
 (provide 'init-custom-packages)
